@@ -14,6 +14,7 @@
 .work-together {
     padding-top: 144px;
     padding-bottom: 80px;
+    background: #F0F0F0;
 }
 
 @media screen and (min-width: 768px) {
@@ -22,6 +23,29 @@
         padding-bottom: 124px;
     }
 } 
+
+@media screen and (min-width: 1280px) {
+    .work-together {
+        padding-top: 164px;
+        padding-bottom: 164px;
+    }
+}
+
+.background-container {
+    display: flex;
+    width: 336px;
+    height: 260px;
+    padding: 0px 1.258px 0px 2.196px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-image: url('your-image-url.jpg'); /* Замініть на URL вашого зображення */
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    filter: blur(2.3640365600585938px);
+  }
+  
 
 .work-together-title {
     color: #00B068;
@@ -42,6 +66,14 @@
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .work-together-title {
+        margin-bottom: 80px;
+        max-width: 507px;
+        margin-right: 183px;
+    }
+}
+
 .black-work-together-title {
     color: #292929;
 }
@@ -58,6 +90,13 @@
     .work-together-contacts {
         display: inline-flex;
         width: 639px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .work-together-contacts {
+        gap: 120px;
+        width: 488px;
     }
 }
 
@@ -107,6 +146,13 @@
     .page-address {
         flex-wrap: nowrap;
         max-width: 639px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .page-address {
+        flex-direction: column;
+        max-width: 258px;
     }
 }
 
