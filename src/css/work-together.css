@@ -78,6 +78,14 @@
     color: #292929;
 }
 
+@media screen and (min-width: 1280px) {
+    .contacts-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+}
+}
 .work-together-contacts {
     display: flex;
     width: 320px;
