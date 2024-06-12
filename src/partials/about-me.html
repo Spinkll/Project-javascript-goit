@@ -1,12 +1,20 @@
 <section class="about-me">
     <div class="container">
         <h2 class="about-me-title">ABOUT<span class="about-me__color">ME</span></h2>
-        <div class="about-me__block">
-            <img class="about-me_img" src="#" alt="">
+        <div class="about-me__block bio__position">
+            <picture >
+                <source srcset="../img/about-desctop.jpg" media="(min-width: 1280px)">
+                <source srcset="../img/about-tab.jpg" media="(min-width: 768px)">
+                <source srcset="../img/about-mob.jpg" media="(min-width: 360px)">
+                <img class="about-me__img" src="../img/about-mob.jpg" alt="face">
+            </picture>
+            <div class="about-me__block">
             <h3 class="about-me__title">BIO</h3>
-            <p class="bio__text">I'm Lloyd Jefferson, a talented programmer specializing in software development. My expertise spans various programming languages and technologies, and I am dedicated to continually enhancing my skills. I thrive on seeking unconventional and creative solutions to problems, leveraging a high level of analytical skills to effectively tackle even the most challenging tasks.</p>
+            <p class="bio__text wh">I'm Lloyd Jefferson, a talented programmer specializing in software development. My expertise spans various programming languages and technologies, and I am dedicated to continually enhancing my skills. I thrive on seeking unconventional and creative solutions to problems, leveraging a high level of analytical skills to effectively tackle even the most challenging tasks.</p>
             <p class="bio__text">Adaptable to both independent and team-oriented work, I collaborate seamlessly with colleagues, exchanging ideas and finding optimal solutions. My professional maturity enables me to navigate challenges and stressful situations with a calm demeanor, maintaining a consistently high quality of work. Committed to self-improvement, I actively engage in studying new technologies and practices to stay current with the latest innovations in the field.</p>
+        </div>
         </div> 
+        <div class="blocks__position">
         <div class="about-me__block">
             <h3 class="about-me__title">EDUCATION</h3>
             <ul class="education__list">
@@ -15,7 +23,7 @@
                 <li class="education__item">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
             </ul>
         </div> 
-        <div class="">
+        <div class="about-me__block">
             <h3 class="about-me__title">ROLE</h3>
             <ul class="role__list">
                 <li class="role__item">Frontend development</li>
@@ -23,8 +31,10 @@
                 <li class="role__item">Blender (enjoy)</li>
             </ul>
         </div>
+        </div>
+        </div>
         <div class="skills">
-            <ul class="skills__list ">
+            <ul class="skills__list">
                 <li class="skills__item">JavaScript</li>
                 <li class="skills__item">React</li>
                 <li class="skills__item">React Native</li>
@@ -32,12 +42,28 @@
                 <li class="skills__item">Node.js</li>
             </ul>
             <ul class="skills__list skills__bg">
-                <li class="skills__item">Node.js</li>
-                <li class="skills__item">HTML/CSS</li>
-                <li class="skills__item">JavaScript</li>
-                <li class="skills__item">React Native</li>
-                <li class="skills__item">React</li>
+                <li class="skill__item">Node.js</li>
+                <li class="skill__item">HTML/CSS</li>
+                <li class="skill__item">JavaScript</li>
+                <li class="skill__item">React Native</li>
+                <li class="skill__item">React</li>
             </ul>
         </div>
-    </div>
+        <!-- <div class="marquee-container">
+            <div class="marquee">
+              <span>Node.js</span>
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>React Native</span>
+              <span>React</span>
+            </div>
+            <div class="marquee">
+                <span>Node.js</span>
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+                <span>React Native</span>
+                <span>React</span>
+              </div>
+          </div> -->
+
 </section>
