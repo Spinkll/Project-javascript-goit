@@ -1,14 +1,27 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .work-together {
     padding-top: 144px;
     padding-bottom: 80px;
 }
 
-.container {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
+@media screen and (min-width: 768px) {
+    .work-together {
+        padding-top: 124px;
+        padding-bottom: 124px;
+    }
+} 
 
 .work-together-title {
     color: #00B068;
@@ -18,6 +31,15 @@
     line-height: 64px;
     letter-spacing: 1.8px;
     text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .work-together-title {
+        font-size: 108px;
+        line-height: 124px;
+        margin-bottom: 60px;
+    }
 }
 
 .black-work-together-title {
@@ -32,6 +54,13 @@
     gap: 32px;
 }
 
+@media screen and (min-width: 768px) {
+    .work-together-contacts {
+        display: inline-flex;
+        width: 639px;
+    }
+}
+
 .work-together-text {
     align-self: stretch;
     color: #292929;
@@ -42,12 +71,27 @@
     text-transform: uppercase;
 }
 
-.work-together-address {
+@media screen and (min-width: 768px) {
+    .work-together-text {
+        width: 488px;
+        font-size: 20px;
+        line-height: 32px; 
+    }
+} 
+
+/* .work-together-address {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
 }
+
+@media screen and (min-width: 768px) {
+    .work-together-address {
+        display: flex;
+        flex-direction: row;
+    }
+} */
 
 .page-address {
     display: flex;
@@ -56,6 +100,14 @@
     align-items: flex-start;
     gap: 16px;
     max-width: 258px;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .page-address {
+        flex-wrap: nowrap;
+        max-width: 639px;
+    }
 }
 
 .page-address li {
@@ -74,6 +126,12 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;  
+}
+
+@media screen and (min-width: 768px) {
+    .work-together-form {
+        max-width: 704px; 
+    }
 }
 
 .form-input {
@@ -139,6 +197,13 @@
     font-weight: 500;
     line-height: 24px; /* 150% */
     letter-spacing: 0.5px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-submit-btn {
+        padding: 12px 0;
+        width: 173px;
+    }
 }
 
 
