@@ -1,6 +1,6 @@
 .about-me {
     padding-bottom: 80px;
-    font-family: Poppins Medium;
+    font-family: 'Poppins Medium', sans-serif;
     font-size: 16px;
     letter-spacing: 0.2px;
     line-height: 24px;
@@ -14,7 +14,7 @@
 }
 
 .about-me-title {
-    font-family: Impact;
+    font-family: 'Impact', sans-serif;
     font-size: 52px;
     letter-spacing: 1.8px;
     line-height: 64px;
@@ -31,11 +31,12 @@
 }
 
 .about-me__block{
+    /* position: relative; */
     margin-bottom: 40px;
     width: 320px;
 }
 .about-me__title {
-    font-family: Poppins Medium;
+    font-family: 'Poppins Medium', sans-serif;
     font-size: 32px;
     letter-spacing: 0.5px;
     line-height: 40px;
@@ -67,75 +68,89 @@
     margin-bottom: 24px;
 }
 
-.skills__list {
+.about-me__bg{
+    overflow: hidden;
+}
+
+/* стрічка, що біжить */
+
+.skills {
     background-color: #BCDFD1;
-    display: flex;
-    width: 100%;
+    overflow: hidden;
     font-family: Poppins Medium;
     font-size: 36px;
     letter-spacing: 0.5px;
     line-height: 48px;
     list-style-type: square;
-    overflow: hidden; 
-    white-space: nowrap;
-    } 
-    
-    
-    .skills__item{
-    animation: marquee 10s linear infinite;
-    margin-left: 56px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-right: 1rem;
-    white-space: nowrap;
-}
-.skills__item::marker{
-    color: #00B068;
-}
-.skill__item{
-    animation: marquee 10s linear infinite;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    white-space: nowrap;
-}
-.skill__item::marker{
     color: #292929;
 }
 .skills__bg{
-            color: #00B068;
-            background-color: #E4E5E6;
-            transform: rotate(2deg);
-            position: relative;
-            z-index: -1;
+    background-color: #E4E5E6;
+    transform: rotate(2deg);
+    position: relative;
+    z-index: -1;
+    color: #00B068;
 }
 
- @keyframes marquee {
-        from{
-            transform: translateX(115%);
-            transform-origin:left center;
-            }
-            to{
-            transform: translateX(-115%);
-            transform-origin: right centr;
-            }
-    } 
+.skills__wrapper {
+    display: flex;
+    list-style-type: square;
+    padding-left: 0;
+    width: fit-content;
+    transform: translate(100%, 0);
+    animation: ticker 20s linear infinite;
+}
+.skills__item,.skill__item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 40px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    }
+    
+.skills__item::marker{
+    color: #00B068;
+}
+
+.skill::marker{
+    color: #292929;
+} 
+
+@keyframes ticker {
+    0% {        
+        transform: translate(100%, 0);
+    }    
+    99% {    
+        opacity: 1;
+        transform: translate(-100%, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-100%, 0);
+    }   
+}    
+
+
+
 
 @media screen and (min-width: 768px) {
     .container{
         max-width: 768px;
     }
     .blocks__position{
+        position: relative;
         display: flex;
         gap: 32px;
     }
-    .about-me__block,.bio__text{
+    .about-me__block,
+    .bio__text{
         width: 336px;
     }
     .about-me{
         padding-bottom: 124px;
     }
     .about-me-title{
-        font-family: Impact;
+        font-family: 'Impact',sans-serif;
         font-size: 108px;
         letter-spacing: 1.8px;
         line-height: 124px;
@@ -151,6 +166,16 @@
         justify-content: space-between;
         gap: 32px;
     }
+    .about-me__bg{
+        overflow:visible;
+        position: absolute;
+        right: 0;
+        bottom: 100;
+    }
+    .skills__item,.skill__item {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 @media screen and (min-width: 1280px) {
     .about-me{
@@ -163,7 +188,8 @@
     .blocks__position{
         gap: 136px;
     }
-    .about-me__block,.bio__text{
+    .about-me__block,
+    .bio__text{
         width: 384px;
     }
 }
