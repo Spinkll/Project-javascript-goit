@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .benefits-section-wrap {}
 
 .benefits-header {}
@@ -42,11 +43,82 @@ h1 {
 }
 
 .highlight {
+=======
+.benefits-section-wrap {
+    /* font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0; */
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    height: 100vh; */
+    padding: 20px;
+    text-align: center;
+}
+
+.benefits-header {
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.benefits-span-green {
+>>>>>>> Stashed changes
     color: #28a745;
     font-weight: bold;
 }
 
+<<<<<<< Updated upstream
 .benefit {
+=======
+/* .benefits-content-wrap {} */
+
+
+.benefits-list-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin: 0 auto;
+}
+
+.benefits-list {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+}
+
+.benefits-icon-wrap {
+    max-width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+.benefits-paragraf {
+    font: Poppins;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    line-height: 28px;
+    font-weight: 400px;
+}
+
+.benefits-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300px;
+}
+
+/* .benefit {
+>>>>>>> Stashed changes
     border-top: 2px solid #e0e0e0;
     padding: 20px 0;
     display: flex;
@@ -61,6 +133,7 @@ h1 {
     width: 32px;
     height: 32px;
     margin-right: 20px;
+<<<<<<< Updated upstream
 }
 
 h2 {
@@ -73,3 +146,31 @@ p {
     font-size: 14px;
     line-height: 1.5;
 } */
+=======
+} */
+
+
+@media screen and (min-width: 768px) {
+    .benefits-list-wrap {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .benefits-list {
+        flex: 1 1 calc(50% - 40px);
+        margin: 10px;
+        max-width: none;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 1280px) {
+    .benefits-list {
+        flex: 1 1 calc(25% - 40px);
+    }
+}
+>>>>>>> Stashed changes
