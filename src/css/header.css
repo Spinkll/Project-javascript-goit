@@ -18,9 +18,14 @@
 .logo-second-word {
     color: var(--secondary-color);
 }
-
+/*
 .header-nav {
     display: none;
+}
+*/
+.mobile-menu-button {
+    height: 32px;
+    width: 32px;
 }
 
 .mob-menu-btn {
