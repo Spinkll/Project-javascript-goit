@@ -24,31 +24,44 @@
                     </ul>
                 </address>
             </div>
-                <form class="work-together-form">
-                    <div class="form-input">
-                        <label for="user-email" class="user-input visually-hidden"></label>
-                        <input
-                          type="email"
-                          name="user-email"
-                          class="email-input"
-                          id="user-email"
-                          placeholder="Your email*"
-                          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-                          required
-                        />
-                    
-                   
-                        <label for="user-message" class="user-input visually-hidden"></label>
-                        <textarea
-                          name="user-message"
-                          id="user-message"
-                          class="order-textarea"
-                          placeholder="Message"
-                        ></textarea>
-                    </div>
+            <form class="work-together-form" novalidate>
+                <div class="form-input">
+                  <label for="user-email" class="user-input visually-hidden">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="email-input"
+                    id="user-email"
+                    placeholder="Your email*"
+                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                    required
+                  />
                   
-                    <button type="submit" class="form-submit-btn">SEND MESSAGE</button>
+                  <label for="user-message" class="user-input visually-hidden">Message</label>
+                  <textarea
+                    name="message"
+                    id="user-message"
+                    class="order-textarea"
+                    placeholder="Message"
+                    required
+                  ></textarea>
                 </div>
-                </form>
+                
+                <button type="submit" class="form-submit-btn">SEND MESSAGE</button>
+              </form>
+              <div id="success-modal" class="modal ">
+                <div class="modal-container">
+                    <button class="button-close" type="button">
+                        <svg class="icon-close" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-x"></use>
+                        </svg>
+                    </button>
+                    <h3 class="title-modal">
+                        Thank you for your interest in cooperation!
+                    </h3>
+                    <p class="text-modal">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+                </div>
+                
+              </div>
     </div>
 </section>
