@@ -5,8 +5,6 @@
 }
 
 .four-section {
-    width: 100%;
-    margin: 0 auto;
     padding: 10px;
 }
 
@@ -98,8 +96,6 @@ img {
 
 .list-sites {
     list-style-type: none;
-    padding-right: 20px;
-    padding-left: 20px;
 }
 
 .two-button {
@@ -118,18 +114,22 @@ img {
     margin: auto;
 }
 
+.two-button:hover {
+    color: #00B068;
+}
+
             /*-----------TABLET------------*/
 @media screen and (min-width: 768px) {
     .four-section {
         padding: 0px 32px;
-        width: 764px;
+        width: 704px;
+        margin: 0 auto;
     }
 
     .projects-item {     
         font-size: 108px;
         line-height: 115%;
         letter-spacing: 0.02em;
-        text-align: center;
     }
 
     .projects-span {
@@ -167,7 +167,7 @@ img {
     }
 
     .visit-button {
-        margin: 0;
+        margin: 0 auto;
         display: inline-flex;
         padding: 10px 20px;
         align-items: center;
@@ -180,8 +180,10 @@ img {
 
     .list-sites {
         list-style-type: none;
-        padding-right: 32px;
-        padding-left: 32px;
+    }
+
+    .two-button {
+        margin: 0 auto;
     }
 
     }
