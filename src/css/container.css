@@ -1,6 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
-  color: #292929;
+  color: var(--text-color);
 }
 section {
   padding-top: 80px;
