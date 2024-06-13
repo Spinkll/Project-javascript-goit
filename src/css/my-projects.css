@@ -114,6 +114,7 @@ img {
     background-color: #fff;
     display: flex;
     margin: auto;
+    cursor: pointer;
 }
 
 .two-button:hover {
