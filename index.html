@@ -13,22 +13,59 @@
     />
     
     <script type="module" crossorigin src="/Project-javascript-goit/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Project-javascript-goit/assets/index-187f5bda.css">
+    <link rel="modulepreload" crossorigin href="/Project-javascript-goit/assets/vendor-8f98089f.js">
+    <link rel="stylesheet" href="/Project-javascript-goit/assets/vendor-8255b786.css">
+    <link rel="stylesheet" href="/Project-javascript-goit/assets/index-e8a724b8.css">
   </head>
   <body>
-    <!-- <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+    <header>
+  <div class="container header">
+    <div class="logo">
+      <a class="logo-link">lloyd<span class="logo-second-word">Jefferson.</span></a>
+    </div>
+    <nav class="header-nav">
+      <ul class="header-nav-menu">
+        <li class="header-nav-menu-item">
+          <label id="switch" class="switch">
+            <input type="checkbox" id="slider">
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li class="header-nav-menu-item">
+          <a class="header-nav-menu-item-link" href="#">About me</a>
+        </li>
+        <li class="header-nav-menu-item">
+          <a class="header-nav-menu-item-link" href="#">Projects</a>
+        </li>
+        <li class="header-nav-menu-item">
+          <a class="header-nav-menu-item-link" href="#">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-button">
+      <button type="button" class="mob-menu-btn">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
+<div class="mob-menu">
+  <nav class="mob-menu-nav">
+    <ul class="mob-menu-nav-menu">
+      <li class="mob-menu-nav-menu-item">
+        <a class="mob-menu-nav-menu-item-link" href="#">About me</a>
+      </li>
+      <li class="mob-menu-nav-menu-item">
+        <a class="mob-menu-nav-menu-item-link" href="#">Projects</a>
+      </li>
+      <li class="mob-menu-nav-menu-item">
+        <a class="mob-menu-nav-menu-item-link" href="#">Contacts</a>
       </li>
     </ul>
   </nav>
-</header> -->
+</div>
+
 
     <main>
       <!DOCTYPE html>
@@ -90,9 +127,127 @@
 </div>
 </section>
 
+      <section class="faq">
+  <div class="container">
+    <h2 class="faq__title">
+      frequently asked <span class="faq__title-accent">question</span>
+    </h2>
+    <ul class="faq__list">
+      <li class="faq__item">
+        <h3 class="faq__subtitle">
+          <button type="button" class="faq__btn">
+            What programming languages are most often used in your project?
+            <svg class="faq__icon" width="32" height="32">
+              <use href="../images/symbol-defs.svg#icon-faq-top"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq__text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="faq__item">
+        <h3 class="faq__subtitle">
+          <button type="button" class="faq__btn">
+            What are the deadlines for the project?
+            <svg class="faq__icon" width="32" height="32">
+              <use href="../images/symbol-defs.svg#icon-faq-top"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq__text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="faq__item">
+        <h3 class="faq__subtitle">
+          <button type="button" class="faq__btn">
+            What payment methods do you accept?
+            <svg class="faq__icon" width="32" height="32">
+              <use href="../images/symbol-defs.svg#icon-faq-top"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq__text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="faq__item">
+        <h3 class="faq__subtitle">
+          <button type="button" class="faq__btn">
+            How can I contact you?
+            <svg class="faq__icon" width="32" height="32">
+              <use href="../images/symbol-defs.svg#icon-faq-top"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq__text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="faq__item">
+        <h3 class="faq__subtitle">
+          <button type="button" class="faq__btn">
+            Do you provide advice or support?
+            <svg class="faq__icon" width="32" height="32">
+              <use href="../images/symbol-defs.svg#icon-faq-top"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq__text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="faq__item">
+        <h3 class="faq__subtitle">
+          <button type="button" class="faq__btn">
+            What does the process of developing a software product look like
+            from idea to implementation?
+            <svg class="faq__icon" width="32" height="32">
+              <use href="../images/symbol-defs.svg#icon-faq-top"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="ac-panel">
+          <p class="faq__text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- <script type="module" src="../js/question.js"></script> -->
+
       
-      
-      <section class="footer">
+      <!-- <section class="footer">
     <div class="container">
         <div class="work-together">
             <h2 class="footer-title"> 
@@ -145,7 +300,8 @@
                     <button type="submit" class="form-submit-btn">SEND MESSAGE</button>
         </form>
     </div>
-</section>
+</section> -->
+
     </main>
     
 
