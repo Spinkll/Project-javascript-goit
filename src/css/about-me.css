@@ -97,7 +97,15 @@
     padding-left: 0;
     width: fit-content;
     transform: translate(100%, 0);
-    animation: ticker 20s linear infinite;
+    animation: ticker reverse 20s linear infinite;
+}
+.skill__wrapper {
+    display: flex;
+    list-style-type: square;
+    padding-left: 0;
+    width: fit-content;
+    transform: translate(100%, 0);
+    animation: ticker  20s linear infinite;
 }
 .skills__item,.skill__item {
     padding-top: 32px;
@@ -117,15 +125,15 @@
 
 @keyframes ticker {
     0% {        
-        transform: translate(100%, 0);
+        transform: translate(135%, 0);
     }    
     99% {    
         opacity: 1;
-        transform: translate(-100%, 0);
+        transform: translate(-135%, 0);
     }
     100% {
         opacity: 0;
-        transform: translate(-100%, 0);
+        transform: translate(-135%, 0);
     }   
 }    
 
@@ -152,13 +160,14 @@
         padding-bottom: 124px;
     }
     .blocks__position{
-        position: relative;
         display: flex;
         gap: 32px;
     }
     .about-me__block,
     .bio__text{
         width: 336px;
+        margin-bottom: 0;
+
     }
     .about-me{
         padding-bottom: 124px;
@@ -179,12 +188,15 @@
         display: flex;
         justify-content: space-between;
         gap: 32px;
+        margin-bottom: 60px;
     }
     .about-me__bg{
         display: block;
         position: absolute;
-        right: 0;
-        bottom: 100;
+        width: 336px;
+        height: 252px;
+        right: 10;
+        bottom: 120;
     }
     .skills__item,.skill__item {
         padding-top: 40px;
@@ -202,7 +214,9 @@
     .container{
         width: 1280px;
     } 
-
+    .wh{
+        margin-bottom: 24px;
+    }
     section {
         padding-top: 164px;
         padding-bottom: 164px;
@@ -211,16 +225,22 @@
         margin-left: 220px;
         margin-top: 156px;
     }
+    .bio__position{
+        gap: 136px;
+        margin-bottom: 80px;
+    }
     .about-me__bg{
-        
+        height: 288px;
+        position: absolute;
+        right: 1;
+        bottom: 10;
     }
     .blocks__position{
         gap: 136px;
         padding-left: 220px;
-        margin-top: 80px;
     }
     .about-me__block,
     .bio__text{
-        width: 384px;
+        width: 488px;
     }
 }
