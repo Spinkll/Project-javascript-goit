@@ -1,6 +1,8 @@
 .header {
     display: flex;
     justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
 }
 
 .logo-link {
@@ -16,13 +18,14 @@
 .logo-second-word {
     color: var(--secondary-color);
 }
-/*
+
 .header-nav {
     display: none;
 }
-*/
+
 .mob-menu-btn {
     border: none;
+    background-color: transparent;
 }
 
 .mob-menu-btn span,
@@ -31,7 +34,7 @@
     display: block;
     width: 20px;
     height: 1px;
-    background-color: var(--test-color);
+    background-color: var(--text-color);
 }
 
 .mob-menu-btn span::before {
