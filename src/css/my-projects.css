@@ -82,6 +82,8 @@ img {
 
 .visit-button:hover {
     background-color: #bbb;
+    transform: scale(1.03);
+    transition: transform 0.8s;
 }
 
 .text-btn {
@@ -116,6 +118,8 @@ img {
 
 .two-button:hover {
     color: #00B068;
+    transform: scale(1.03);
+    transition: transform 0.8s;
 }
 
 .line-line {
