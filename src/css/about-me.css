@@ -1,5 +1,4 @@
 .about-me {
-    padding-bottom: 80px;
     font-family: 'Poppins Medium', sans-serif;
     font-size: 16px;
     letter-spacing: 0.2px;
@@ -7,7 +6,7 @@
 }
 
 .container {
-    max-width: 360px;
+    /* max-width: 360px; */
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
@@ -23,15 +22,15 @@
 
 .about-me__color{
     margin-left: 7px;
-    color: rgba(0, 176, 104, 1);
+    color: var(--secondary-light-color);
 }
 
 .about-me__img {
     margin-bottom: 40px;
+    max-width: fit-content;
 }
 
 .about-me__block{
-    /* position: relative; */
     margin-bottom: 40px;
     width: 320px;
 }
@@ -44,7 +43,7 @@
 }
 .education__list {
     text-decoration: dashed;
-
+    list-style: square;
 }
 .bio__text{
     width:320px
@@ -54,22 +53,22 @@
     margin-left: 32px;
 }
 .education__item::marker{
-    color: rgba(0, 176, 104, 1);
+    color: var(--secondary-light-color);
 }
 
 .role__list {
     margin-left: 32px;
-
+    list-style: square;
 }
 .role__item::marker {
-    color: rgba(0, 176, 104, 1);
+    color: var(--secondary-light-color);
 }
 .wh{
     margin-bottom: 24px;
 }
 
 .about-me__bg{
-    overflow: hidden;
+    display: none;
 }
 
 /* стрічка, що біжить */
@@ -82,14 +81,14 @@
     letter-spacing: 0.5px;
     line-height: 48px;
     list-style-type: square;
-    color: #292929;
+    color:var(--black-light-color);
 }
 .skills__bg{
     background-color: #E4E5E6;
     transform: rotate(2deg);
     position: relative;
     z-index: -1;
-    color: #00B068;
+    color:var(--secondary-light-color);
 }
 
 .skills__wrapper {
@@ -109,11 +108,11 @@
     }
     
 .skills__item::marker{
-    color: #00B068;
+    color: var(--secondary-light-color);
 }
 
-.skill::marker{
-    color: #292929;
+.skill__item::marker{
+    color: var(--black-light-color);
 } 
 
 @keyframes ticker {
@@ -130,12 +129,27 @@
     }   
 }    
 
-
+@media screen and (max-width: 359px) {
+    .container {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 360px) {
+    .container {
+        width: 360px;
+    }
+}
 
 
 @media screen and (min-width: 768px) {
-    .container{
-        max-width: 768px;
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+        width: 768px;
+    }
+    section {
+        padding-top: 124px;
+        padding-bottom: 124px;
     }
     .blocks__position{
         position: relative;
@@ -167,7 +181,7 @@
         gap: 32px;
     }
     .about-me__bg{
-        overflow:visible;
+        display: block;
         position: absolute;
         right: 0;
         bottom: 100;
@@ -176,6 +190,10 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
+    .about-me__img{
+        margin-top: 232px;
+        margin-bottom: 0;
+    }
 }
 @media screen and (min-width: 1280px) {
     .about-me{
@@ -183,10 +201,23 @@
     }
     .container{
         width: 1280px;
-        margin: 0 auto;
+    } 
+
+    section {
+        padding-top: 164px;
+        padding-bottom: 164px;
+    }
+    .about-me__img{
+        margin-left: 220px;
+        margin-top: 156px;
+    }
+    .about-me__bg{
+        
     }
     .blocks__position{
         gap: 136px;
+        padding-left: 220px;
+        margin-top: 80px;
     }
     .about-me__block,
     .bio__text{
