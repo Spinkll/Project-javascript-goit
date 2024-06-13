@@ -59,6 +59,11 @@
 }
 
 .faq__icon {
+  /* display: inline-block; */
+
+  stroke: currentColor;
+  fill: transparent;
+
   transition: transform 0.3s ease;
   flex-shrink: 0;
 }
@@ -123,7 +128,7 @@
 
     background-image: url(../images/faq_decor-1x.png);
     background-repeat: no-repeat;
-    background-position: left 32px bottom;
+    background-position: left 32px top 612px;
     background-size: 526px;
   }
   .faq__title {
