@@ -118,12 +118,19 @@ img {
     color: #00B068;
 }
 
+.line-line {
+    stroke-width: 1px;
+    stroke: #00B068;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    margin: auto;
+}
+
             /*-----------TABLET------------*/
 @media screen and (min-width: 768px) {
     .four-section {
         padding: 0px 32px;
         width: 704px;
-        margin: 0 auto;
     }
 
     .projects-item {     
@@ -176,10 +183,6 @@ img {
     .frame-group { 
         display: flex;
         align-items: center;
-    }
-
-    .list-sites {
-        list-style-type: none;
     }
 
     .two-button {
