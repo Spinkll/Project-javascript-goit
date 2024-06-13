@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.four-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
 .projects-item {
     color: #292929;    
     font-family: Impact;
@@ -63,15 +69,21 @@ img {
 }
 
 .visit-button {
-    display: flex;
-    padding: 12px 24px;
+    margin-top: 16px;
+    margin-left: 200px;
+    margin-right: 20px;
+    display: inline-flex;
+    padding: 10px 20px;
     align-items: center;
     gap: 12px;
     border-radius: 8px;
     border: none;
     background: #E4E5E6;
-    float: right;
-    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.visit-button:hover {
+    background-color: #bbb;
 }
 
 .text-btn {
@@ -91,10 +103,7 @@ img {
 }
 
 .two-button {
-    display: inline-flex;
-    justify-content: center;
     padding: 0px 20px;
-    flex-direction: column;
     color: #292929;
     font-family: Poppins;
     font-size: 18px;
@@ -105,15 +114,22 @@ img {
     text-transform: uppercase;
     border: none;
     background-color: #fff;
-    padding-left: 127px;
+    display: flex;
+    margin: auto;
 }
 
-                                       /*-----------TABLET------------*/
+            /*-----------TABLET------------*/
 @media screen and (min-width: 768px) {
-    .projects-item{     
+    .four-section {
+        padding: 0px 32px;
+        width: 764px;
+    }
+
+    .projects-item {     
         font-size: 108px;
         line-height: 115%;
         letter-spacing: 0.02em;
+        text-align: center;
     }
 
     .projects-span {
@@ -139,22 +155,41 @@ img {
     }
 
     .text-info {
-        font-weight: 500;
         font-size: 36px;
         line-height: 133%;
         letter-spacing: 0.01em;
         text-transform: uppercase;
-        margin-top: 20px;
+        white-space: nowrap;
     }
 
     .items-info {
-        margin: 0;
         margin-top: 60px;
     }
 
     .visit-button {
         margin: 0;
+        display: inline-flex;
+        padding: 10px 20px;
+        align-items: center;
     }
-}
+
+    .frame-group { 
+        display: flex;
+        align-items: center;
+    }
+
+    .list-sites {
+        list-style-type: none;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    }
+
                                        /*----------DESKTOP-----------*/
-@media screen and (min-width: 1280px) {}                                       
+@media screen and (min-width: 1280px) {
+    img {
+        width: 1080px;
+        height: 578px;
+    }
+}                                       
