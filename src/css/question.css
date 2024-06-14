@@ -4,6 +4,7 @@
 }
 
 .faq__title {
+  color: var();
   font-family: Impact;
   font-size: 52px;
   font-weight: 400;
@@ -15,7 +16,7 @@
 }
 
 .faq__title-accent {
-  color: #00b068;
+  color: var(--secondary-color);
 }
 
 .faq__list {

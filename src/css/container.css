@@ -3,8 +3,8 @@ body {
   color: var(--text-color);
 }
 section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .container {
@@ -30,8 +30,8 @@ section {
     width: 768px;
   }
   section {
-    padding-top: 124px;
-    padding-bottom: 124px;
+    padding-top: 62px;
+    padding-bottom: 62px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -39,7 +39,7 @@ section {
     width: 1280px;
   }
   section {
-    padding-top: 164px;
-    padding-bottom: 164px;
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
 }
