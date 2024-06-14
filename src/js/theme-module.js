@@ -21,5 +21,4 @@ export function getTheme() {
         setTheme('theme-light');
         document.getElementById('slider').checked = false;
     }
-    console.log(theme.matches);
 }
