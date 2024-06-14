@@ -68,8 +68,6 @@ img {
 
 .visit-button {
     margin-top: 16px;
-    margin-left: 200px;
-    margin-right: 20px;
     display: inline-flex;
     padding: 10px 20px;
     align-items: center;
@@ -179,8 +177,9 @@ img {
     }
 
     .visit-button {
-        margin: 0 auto;
-        display: inline-flex;
+        margin: 0;
+        justify-content: end;
+        display: flex;
         padding: 10px 20px;
         align-items: center;
     }
@@ -188,6 +187,7 @@ img {
     .frame-group { 
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     .two-button {
