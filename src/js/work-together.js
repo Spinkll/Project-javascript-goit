@@ -1,69 +1,51 @@
-// import axios from 'axios';
+import axios from 'axios';
 
-// const formWorkTogether = document.querySelector('.work-together-form');
-// const inputEmail = formWorkTogether.elements.email;
-// const inputMessage = formWorkTogether.elements.message;
-// const successModal = document.getElementById('success-modal');
-//       const closeModalButton = document.getElementById('close-modal');
+const formWorkTogether = document.querySelector('.work-together-form');
+const inputEmail = formWorkTogether.elements.email;
+const inputMessage = formWorkTogether.elements.message;
+const modal = document.querySelector('.modal');
+const closeModalButton = modal.querySelector('.button-close');
 
-// const axiosInstance = axios.create({
-//     baseURL: 'https://portfolio-js.b.goit.study/api-docs',
-// })
+const axiosInstance = axios.create({
+    baseURL: 'https://portfolio-js.b.goit.study/api-docs',
+})
 
-// async function postMessage(email, message) {
-//     try {
-//       const response = await axiosInstance.post('/endpoint', { // Замініть '/endpoint' на правильний кінцевий URL
-//         email: email,
-//         message: message,
-//       });
-//       return response.data;
-//     } catch (error) {
-//       throw error;
-//     }
-//   }
+modal.classList.add('visually-hidden');
 
-// formWorkTogether.addEventListener('submit', async (event) => {
-//     event.preventDefault();
+async function postMessage(email, message) {
+    try {
+        const response = await axiosInstance.post('', {
+            email: email,
+            message: message,
+        });
+        return response.data;
+    } catch (error) {
+        throw error;
+    }
+}
 
-//     const emailForm = inputEmail.value.trim();
-//     const messageForm = inputMessage.value.trim();
+formWorkTogether.addEventListener('submit', async (event) => {
+    event.preventDefault();
 
-//     if (emailForm === '' || messageForm === '') {
-//     alert('Fill please all fields');
-//     return;
-//     }
+    const emailForm = inputEmail.value.trim();
+    const messageForm = inputMessage.value.trim();
 
-//     try {
-//           await postMessage(emailForm, messageForm);
-//           successModal.classList.add('visually-hidden');
-//           formWorkTogether.reset();
-//         } catch (error) {
-//           alert('Error sending message. Please correct the input and try again.');
-//         }
-//       });
-
-//       closeModalButton.addEventListener('click', () => {
-//         successModal.classList.remove('visually-hidden');
-//       });
-
-      
-
-    const modal = document.querySelector('.modal');
-    const closeModalButton = document.querySelector('.button-close');
-
-
-    function closeModal() {
-        modal.classList.add('visually-hidden');
+    if (emailForm === '' || messageForm === '') {
+        alert('Будь ласка, заповніть всі поля.');
+        return;
     }
 
-    closeModalButton.addEventListener('click', closeModal);
+    try {
+        await postMessage(emailForm, messageForm);
+        modal.classList.remove('visually-hidden'); 
+        formWorkTogether.reset();
+    } catch (error) {
+        alert('Помилка при відправленні повідомлення. Будь ласка, спробуйте ще раз.');
+    }
+});
 
-    // form.addEventListener('submit', (event) => {
-    //     event.preventDefault(); // Зупиняємо стандартну відправку форми
-        
-    //     // Додайте тут ваш код для обробки даних форми або відправки через AJAX
+closeModalButton.addEventListener('click', () => {
+    modal.classList.add('visually-hidden');
+});
 
-    //     // Показуємо модальне вікно після успішної відправки
-    //     openModal();
-    // });
 
