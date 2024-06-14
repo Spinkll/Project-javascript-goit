@@ -5,13 +5,6 @@
     line-height: 24px;
 }
 
-.container {
-    /* max-width: 360px; */
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-}
-
 .about-me-title {
     font-family: 'Impact', sans-serif;
     font-size: 52px;
@@ -21,8 +14,8 @@
 }
 
 .about-me__color{
-    margin-left: 7px;
-    color: var(--secondary-light-color);
+    margin-left: 10px;
+    color:var(--secondary-color);
 }
 
 .about-me__img {
@@ -33,6 +26,7 @@
 .about-me__block{
     margin-bottom: 40px;
     width: 320px;
+    color:var(--text-color);
 }
 .about-me__title {
     font-family: 'Poppins Medium', sans-serif;
@@ -46,14 +40,15 @@
     list-style: square;
 }
 .bio__text{
-    width:320px
-
+    width:320px;
+    line-height: 24px;
+    color:var(--text-color);
 }
 .education__item {
     margin-left: 32px;
 }
 .education__item::marker{
-    color: var(--secondary-light-color);
+    color:var(--secondary-color);
 }
 
 .role__list {
@@ -61,7 +56,7 @@
     list-style: square;
 }
 .role__item::marker {
-    color: var(--secondary-light-color);
+    color:var(--secondary-color);
 }
 .wh{
     margin-bottom: 24px;
@@ -74,21 +69,22 @@
 /* стрічка, що біжить */
 
 .skills {
-    background-color: #BCDFD1;
+    background-color:var(--muted-color);
     overflow: hidden;
-    font-family: Poppins Medium;
-    font-size: 36px;
+    font-family: Poppins Medium, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
     letter-spacing: 0.5px;
     line-height: 48px;
     list-style-type: square;
-    color:var(--black-light-color);
+    color:var(--text-color);
 }
 .skills__bg{
-    background-color: #E4E5E6;
+    background-color: var(--accent-color);
     transform: rotate(2deg);
     position: relative;
     z-index: -1;
-    color:var(--secondary-light-color);
+    color:var(--secondary-color);
 }
 
 .skills__wrapper {
@@ -114,13 +110,12 @@
     flex-shrink: 0;
     white-space: nowrap;
     }
-    
 .skills__item::marker{
-    color: var(--secondary-light-color);
+    color: var(--secondary-color);
 }
 
 .skill__item::marker{
-    color: var(--black-light-color);
+    color:var(--text-color);
 } 
 
 @keyframes ticker {
@@ -137,28 +132,9 @@
     }   
 }    
 
-@media screen and (max-width: 359px) {
-    .container {
-        width: 100%;
-    }
-}
-@media screen and (min-width: 360px) {
-    .container {
-        width: 360px;
-    }
-}
-
 
 @media screen and (min-width: 768px) {
-    .container {
-        padding-left: 32px;
-        padding-right: 32px;
-        width: 768px;
-    }
-    section {
-        padding-top: 124px;
-        padding-bottom: 124px;
-    }
+
     .blocks__position{
         display: flex;
         gap: 32px;
@@ -198,6 +174,9 @@
         right: 10;
         bottom: 120;
     }
+    .skills{
+        font-size: 36px;
+    }
     .skills__item,.skill__item {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -211,15 +190,8 @@
     .about-me{
         padding-bottom: 164px;
     }
-    .container{
-        width: 1280px;
-    } 
     .wh{
         margin-bottom: 24px;
-    }
-    section {
-        padding-top: 164px;
-        padding-bottom: 164px;
     }
     .about-me__img{
         margin-left: 220px;
