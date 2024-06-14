@@ -35,25 +35,12 @@
 .mob-menu-btn, .mob-menu-btn-close {
     border: none;
     background-color: transparent;
+    width: 32px;
+    height: 32px;
 }
 
-.mob-menu-btn span,
-.mob-menu-btn span::before,
-.mob-menu-btn span::after {
-    display: block;
-    width: 20px;
-    height: 1px;
-    background-color: var(--text-color);
-}
-
-.mob-menu-btn span::before {
-    content: "";
-    transform: translateY(5px);
-}
-
-.mob-menu-btn span::after {
-    content: "";
-    transform: translateY(-5px);
+.modal_open_icon {
+    fill: var(--text-color);
 }
 
 .mob-menu-logo-link {
@@ -98,30 +85,15 @@
     row-gap: 24px;
 }
 
-.mobile-menu-button-close::after, 
-.mobile-menu-button-close::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 2px;
-    background-color: var(--text-color);
-}
-
-.mobile-menu-button-close::after {
-    transform: rotate(-45deg) translate(12px, -4px);
-}
-
-.mobile-menu-button-close::before {
-    transform: rotate(45deg) translate(15px, 6px);
-}
-
 .mob-menu-nav-menu-item {
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.03em;
 }
-
+.header-nav-menu-item:target a,
+.header-nav-menu-item:active a,
+.header-nav-menu-item:hover a,
 .mobile-menu-button-close:hover,
 .mob-menu-nav-menu-item:hover a, 
 .mob-menu-nav-menu-item:active a,

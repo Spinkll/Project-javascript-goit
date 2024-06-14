@@ -1,13 +1,11 @@
-const header = document.querySelector(".header");
+const switcslider = document.querySelector("#slider");
 const mobMenuOpen = document.querySelector(".mob-menu-btn");
+const mobMenuClose = document.querySelector(".mob-menu-btn-close");
 const mobMenu = document.querySelector(".mob-menu");
 
 import {toggleTheme} from "./theme-module.js";
 
 function scrole(name) {
-    if(name === "Close") {
-        mobMenu.classList.remove("is-open");
-    }
     if(name === "About me") {
         mobMenu.classList.remove("is-open");
         window.scrollBy({
@@ -31,23 +29,16 @@ function scrole(name) {
     }
 }
 
-header.addEventListener("click", event => {
-    const name = event.target.name;
-    if(name === "About me" || name === "Projects" || name === "Projects") {
-        scrole()
-    }
-    if(name === "slider") {
-        toggleTheme();
-    }
-    if(name === "menu-open") {
-        mobMenu.classList.add("is-open");
-    }
+switcslider.addEventListener("click", event => {
+    toggleTheme();
 })
-/*
 mobMenuOpen.addEventListener("click", event => {
     mobMenu.classList.add("is-open");
 })
-*/
+mobMenuClose.addEventListener("click", event => {
+    mobMenu.classList.remove("is-open");
+})
+
 mobMenu.addEventListener('click', event => {
     const name = event.target.name;
     scrole(name)
