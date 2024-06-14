@@ -54,9 +54,10 @@
   --primary-color: #1e2023;
   --secondary-color: #14c57c;
   --third-color: #f0f0f0;
-  --accent-color: #2a2d32;;
+  --accent-color: #2a2d32;
   --muted-color: #204136;
   --text-color: #ffffff;
+  --titles-color: #292929;
 }
 
 .theme-light {
@@ -66,4 +67,5 @@
   --accent-color: #e4e5e6;
   --muted-color: #bcdfd1;
   --text-color: #1e2023;
+  --titles-color: #f0f0f0;
 }
