@@ -2,31 +2,24 @@ const switcslider = document.querySelector("#slider");
 const mobMenuOpen = document.querySelector(".mob-menu-btn");
 const mobMenuClose = document.querySelector(".mob-menu-btn-close");
 const mobMenu = document.querySelector(".mob-menu");
+const aboutMe = document.querySelector("#about-me");
+const anchors = document.querySelectorAll('a[href*="#"]')
 
 import {toggleTheme} from "./theme-module.js";
 
-function scrole(name) {
-    if(name === "About me") {
-        mobMenu.classList.remove("is-open");
-        window.scrollBy({
-            top: /*елементи куди скролемо*/getBoundingClientRect().height,
-            behavior: "smooth",
-        });
-    }
-    if(name === "Projects") {
-        mobMenu.classList.remove("is-open");
-        window.scrollBy({
-            top: /*елементи куди скролемо*/getBoundingClientRect().height,
-            behavior: "smooth",
-        });
-    }
-    if(name === "Contacts") {
-        mobMenu.classList.remove("is-open");
-        window.scrollBy({
-            top: /*елементи куди скролемо*/getBoundingClientRect().height,
-            behavior: "smooth",
-        });
-    }
+function scrole() {
+    for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault()
+          
+          const blockID = anchor.getAttribute('href').substr(1)
+          
+          document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          })
+        })
+      }
 }
 
 switcslider.addEventListener("click", event => {
@@ -40,6 +33,8 @@ mobMenuClose.addEventListener("click", event => {
 })
 
 mobMenu.addEventListener('click', event => {
-    const name = event.target.name;
-    scrole(name)
+    mobMenu.classList.remove("is-open");
+    scrole()
 })
+
+
