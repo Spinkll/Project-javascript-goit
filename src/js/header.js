@@ -2,7 +2,7 @@ const switcslider = document.querySelector("#slider");
 const mobMenuOpen = document.querySelector(".mob-menu-btn");
 const mobMenuClose = document.querySelector(".mob-menu-btn-close");
 const mobMenu = document.querySelector(".mob-menu");
-const aboutMe = document.querySelector("#about-me");
+const hederMenu = document.querySelector(".header-nav-menu");
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 import {toggleTheme} from "./theme-module.js";
@@ -32,9 +32,23 @@ mobMenuClose.addEventListener("click", event => {
     mobMenu.classList.remove("is-open");
 })
 
+hederMenu.addEventListener('click', event => {
+    const name = event.target.name;
+    if(name === "About me" || name === "Projects" || name === "Contacts") {
+        scrole()
+    }else {
+        return;
+    }
+})
+
 mobMenu.addEventListener('click', event => {
-    mobMenu.classList.remove("is-open");
-    scrole()
+    const name = event.target.name;
+    if(name === "About me" || name === "Projects" || name === "Contacts") {
+        mobMenu.classList.remove("is-open");
+        scrole()
+    }else {
+        return;
+    }
 })
 
 
