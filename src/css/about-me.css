@@ -26,7 +26,7 @@
 .about-me__block{
     margin-bottom: 40px;
     width: 320px;
-    color:var(--text-color);
+    color:var(--title-color);
 }
 .about-me__title {
     font-family: 'Poppins Medium', sans-serif;
@@ -42,7 +42,7 @@
 .bio__text{
     width:320px;
     line-height: 24px;
-    color:var(--text-color);
+    color:var(--title-color);
 }
 .education__item {
     margin-left: 32px;
@@ -77,7 +77,7 @@
     letter-spacing: 0.5px;
     line-height: 48px;
     list-style-type: square;
-    color:var(--text-color);
+    color:var(--title-color);
 }
 .skills__bg{
     background-color: var(--accent-color);
@@ -115,7 +115,7 @@
 }
 
 .skill__item::marker{
-    color:var(--text-color);
+    color:var(--title-color);
 } 
 
 @keyframes ticker {
@@ -155,7 +155,7 @@
         line-height: 124px;
     }
     .about-me__title{
-        font-family: Poppins Medium;
+        font-family: 'Poppins Medium',sans-serif;
         font-size: 36px;
         letter-spacing: 0.5px;
         line-height: 48px;
