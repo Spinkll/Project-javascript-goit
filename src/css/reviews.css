@@ -1,0 +1,151 @@
+/* !------------- GENERAL -------------! */
+
+/* ------------- Header ------------- */
+
+.reviews-head {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--titles-color);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ------------- Swiper and slides ------------- */
+
+/* .swiper {
+  width: 320px;
+} */
+
+.swiper-slide {
+  width: 320px !important;
+  background-color: var(--accent-color);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+/* ------------- Swiper buttons ------------- */
+
+.swiper-buttons {
+  margin-top: 48px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: static !important;
+  display: inline-block !important;
+  border: 1px solid var(--titles-color);
+  border-radius: 8px;
+  padding: 8px;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '' !important;
+}
+
+.swiper-btn-icon {
+  stroke: var(--titles-color);
+  display: flex;
+  fill: transparent;
+  width: 24px;
+  height: 24px;
+}
+
+/* ------------- Reviews info ------------- */
+
+.reviews-text {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 24px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.review-author-data {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.reviews-img {
+  border-radius: 24px;
+  width: 40px;
+  height: 40px;
+}
+
+.reviews-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.error-container {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  width: 320px;
+  height: 296px;
+  border-radius: 16px;
+  padding: 32px;
+  background-color: var(--accent-color);
+}
+
+/* !------------- TABLET -------------! */
+
+@media screen and (min-width: 768px) {
+  .reviews-head {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
+  }
+
+  /* .swiper {
+    width: 704px;
+  } */
+
+  .swiper-slide {
+    width: 704px !important;
+  }
+
+  .error-container {
+    width: 700px;
+  }
+}
+
+/* !------------- DESKTOP -------------! */
+
+@media screen and (min-width: 1280px) {
+  .reviews-head {
+    margin-bottom: 80px;
+  }
+
+  .swiper {
+    width: 1204px !important;
+  }
+
+  .swiper-slide {
+    width: 592px !important;
+  }
+  /* 
+  .swiper-buttons {
+    margin-top: 72px;
+  } */
+}
