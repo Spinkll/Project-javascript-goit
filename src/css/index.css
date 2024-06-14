@@ -56,7 +56,7 @@
   --muted-color: #204136;
   --text-color: #ffffff;
   --titles-color: #f0f0f0;
-  --secondary-bgc-accent: rgba(0, 176, 104, 0.2);
+  --secondary-bgc-accent: #204136;
 }
 
 .theme-light {
@@ -67,5 +67,5 @@
   --muted-color: #bcdfd1;
   --text-color: #1e2023;
   --titles-color: #292929;
-  --secondary-bgc-accent: #204136;
+  --secondary-bgc-accent: rgba(0, 176, 104, 0.2);
 }
