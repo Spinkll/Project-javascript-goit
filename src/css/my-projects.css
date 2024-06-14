@@ -76,6 +76,7 @@ img {
     border: none;
     background: #E4E5E6;
     cursor: pointer;
+    margin-left: 210px;
 }
 
 .visit-button:hover {
@@ -133,7 +134,7 @@ img {
 @media screen and (min-width: 768px) {
     .four-section {
         padding: 0px 32px;
-        width: 704px;
+        width: 100%;
     }
 
     .projects-item {     
