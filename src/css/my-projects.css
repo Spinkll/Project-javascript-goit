@@ -203,4 +203,10 @@ img {
         width: 1080px;
         height: 578px;
     }
+
+    .four-section
+    {
+        width: 100%;
+        padding: 0px 136px;
+    }
 }                                       
