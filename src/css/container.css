@@ -1,35 +1,41 @@
-body {
-  font-family: 'Inter Tight', sans-serif;
-  color: #fbfbfb;
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .container {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 359px) {
   .container {
     width: 100%;
   }
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 360px) {
   .container {
-    width: 375px;
+    width: 360px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    padding-left: 124px;
-    padding-right: 124px;
+    padding-left: 32px;
+    padding-right: 32px;
     width: 768px;
+  }
+  section {
+    padding-top: 62px;
+    padding-bottom: 62px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
-    padding-left: 164px;
-    padding-right: 164px;
     width: 1280px;
+  }
+  section {
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
 }
