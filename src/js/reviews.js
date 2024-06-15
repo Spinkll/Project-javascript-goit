@@ -17,6 +17,8 @@ import 'swiper/css/navigation';
 
 /* ------------- Swiper configs ------------- */
 
+const swiperContainer = document.querySelector('#swiper-container');
+
 const swiper = new Swiper('.swiper', {
   modules: [Navigation, Keyboard],
   speed: 400,
@@ -47,6 +49,30 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+/* --- Swiper Tab Navigation --- */
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Tab' && swiperContainer.contains(document.activeElement)) {
+    if (event.shiftKey) {
+      swiper.slidePrev();
+    } else {
+      swiper.slideNext();
+    }
+  }
+});
+
+/* ------------- Loader ------------- */
+
+const loader = document.querySelector('.loader');
+
+function hideLoader() {
+  loader.style.display = 'none';
+}
+
+function showLoader() {
+  loader.style.visibility = 'visible';
+}
+
 /* ------------- HTTP request ------------- */
 
 const BASE_URL = 'https://portfolio-js.b.goit.study/api/reviews';
@@ -65,7 +91,8 @@ function createMarkup(reviews1) {
     .map(
       review =>
         `
-      <li class="swiper-slide">
+      <li class="swiper-slide" id="review-slide">
+
       <p class="reviews-text">${review.review}</p>
       <div class="review-author-data">
           <a class="reviews-img-link" href="${review.avatar_url}">
@@ -81,7 +108,9 @@ function createMarkup(reviews1) {
 /* ------------- Getting reviews ------------- */
 
 const errorContainer = document.querySelector('.error-container');
-const swiperContainer = document.querySelector('.swiper');
+
+showLoader();
+
 
 getReviews()
   .then(data => {
@@ -110,4 +139,7 @@ getReviews()
       messageColor: '#FFFFFF',
     });
     console.log(error);
+  })
+  .finally(() => {
+    hideLoader();
   });
