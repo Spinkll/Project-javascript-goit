@@ -2,19 +2,27 @@ const loadMoreBtn = document.getElementById('two-button');
 const listItems = document.querySelectorAll('#list-sites .hidden');
 let currentIndex = 0;
 
+
+function checkLoadMoreButton() {
+    if (currentIndex >= listItems.length) {
+        loadMoreBtn.style.display = 'none'; 
+    } else {
+        loadMoreBtn.style.display = 'block'; 
+    }
+}
+
+
+checkLoadMoreButton();
+
 loadMoreBtn.addEventListener('click', () => {
     let itemsToShow = 3;
-    if (currentIndex + itemsToShow >= listItems.length) {
-        itemsToShow = listItems.length - currentIndex;
-        loadMoreBtn.classList.add('hidden');
-    }
 
-    for (let i = currentIndex; i <= currentIndex + itemsToShow; i++) {
+    for (let i = currentIndex; i < currentIndex + itemsToShow && i < listItems.length; i++) {
         listItems[i].classList.remove('hidden');
     }
+
     currentIndex += itemsToShow;
 
-    if (currentIndex >= listItems.length) {
-        loadMoreBtn.classList.add('hidden');
-    }
+    
+    checkLoadMoreButton();
 });

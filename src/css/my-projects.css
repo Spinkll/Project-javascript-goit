@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 a {
     text-decoration: none;
@@ -17,9 +13,7 @@ a {
     display: none;
 }
 
-.four-section {
-    padding: 10px;
-}
+
 
 .projects-item {
     color: #292929;    
@@ -30,8 +24,8 @@ a {
     line-height: 64px; 
     letter-spacing: 1.8px;
     text-transform: uppercase;
-    margin-bottom: 40px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .projects-span {
@@ -45,11 +39,12 @@ a {
     text-transform: uppercase;
 }
 
-img {
-    width: 320px;
-    height: 184px;
-    border-radius: 16px;
-    background: url(<path-to-image>) white -6.253px 0px / 103.908% 100.692% no-repeat;
+.list-sites {
+    display: flex;
+    max-width: 320px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
 }
 
 .lang-item {
@@ -73,10 +68,6 @@ img {
     line-height: 40px; 
     letter-spacing: 0.5px;
     text-transform: uppercase;
-}
-
-.items-info {
-    margin-bottom: 40px;
 }
 
 .visit-button {
@@ -127,6 +118,7 @@ img {
     display: flex;
     margin: auto;
     cursor: pointer;
+    margin-top: 52px;
 }
 
 .two-button:hover {
@@ -145,10 +137,7 @@ img {
 
             /*-----------TABLET------------*/
 @media screen and (min-width: 768px) {
-    .four-section {
-        padding: 0px 32px;
-        width: 100%;
-    }
+    
 
     .projects-item {     
         font-size: 108px;
@@ -162,12 +151,9 @@ img {
         letter-spacing: 0.02em;
     }
 
-    img {
-        padding: 0;
-        width: 704px;
-        height: 404px;
-        border-radius: 24px;
-        background: url(<path-to-image>) white -6.253px 0px / 103.908% 100.692% no-repeat;
+    .list-sites {
+        max-width: 704px;
+        gap: 60px;
     }
 
     .lang-item {   
@@ -207,21 +193,16 @@ img {
     }
 
     .two-button {
-        margin: 0 auto;
+        margin-top: 60px;
     }  
     }
 
                                        /*----------DESKTOP-----------*/
 @media screen and (min-width: 1280px) {
-    img {
-        width: 1080px;
-        height: 578px;
-    }
-
-    .four-section
-    {
-        width: 100%;
-        padding: 0px 136px;
+    
+    .list-sites {
+        max-width: 1008px;
+        gap: 80px;
     }
 
     .visit-button {
@@ -230,13 +211,9 @@ img {
     }
 
     .two-button {
-        padding: 0px 20px;
         font-size: 20px;
-        font-style: normal;
         line-height: 32px;
-        letter-spacing: 0.5px;
-        display: flex;
-        margin: auto;
-        cursor: pointer;
+        margin-top: 80px;
     }
-}                                       
+}               
+                         

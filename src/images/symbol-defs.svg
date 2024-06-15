@@ -59,5 +59,8 @@
 <symbol id="icon-mobmenu-open" viewBox="0 0 32 32">
 <path d="M5.33398 23.026V21.6927H26.6673V23.026H5.33398ZM5.33398 16.666V15.3327H26.6673V16.666H5.33398ZM5.33398 10.306V8.97266H26.6673V10.306H5.33398Z"/>
 </symbol>
+<symbol id="icon-Arrow-1-4" viewBox="0 0 1904 32">
+<path fill="#00b068" style="fill: var(--color1, #00b068)" d="M24 0c-8.837 0-16 7.163-16 16s7.163 16 16 16v-32zM24 32l1872 0v-32l-1872-0v32z"></path>
+</symbol>
 </defs>
 </svg>
