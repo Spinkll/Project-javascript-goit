@@ -1,4 +1,4 @@
-const switcSliders = document.querySelectorAll("#slider");
+const switcSliders = document.querySelectorAll('[name="slider"]');
 
 const mobMenuOpen = document.querySelector(".mob-menu-btn");
 const mobMenuClose = document.querySelector(".mob-menu-btn-close");
