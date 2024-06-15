@@ -7,7 +7,7 @@ const theme = window.matchMedia('(prefers-color-scheme: dark)');
     const favicon = document.getElementById('favicon');
      
     if (themeName === 'theme-dark') {
-        favicon.href = './darkFavIcon.svg';
+        favicon.href = '/public/darkFavIcon.svg';
     } else {
         favicon.href = './lightFavIcon.svg';
     }
