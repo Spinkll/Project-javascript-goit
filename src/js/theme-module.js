@@ -1,6 +1,4 @@
 const theme = window.matchMedia('(prefers-color-scheme: dark)');
-const lightIconPath = '/lightFavIcon.svg';
-const darkIconPath = '/darkFavIcon.svg';
 
  function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
@@ -9,9 +7,9 @@ const darkIconPath = '/darkFavIcon.svg';
     const favicon = document.getElementById('favicon');
      
     if (themeName === 'theme-dark') {
-        favicon.href = darkIconPath;
+        favicon.href = '/darkFavIcon.svg';
     } else {
-        favicon.href = lightIconPath;
+        favicon.href = '/lightFavIcon.svg';
     }
 }
 
