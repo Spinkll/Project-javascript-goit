@@ -9,8 +9,12 @@ loadMoreBtn.addEventListener('click', () => {
         loadMoreBtn.classList.add('hidden');
     }
 
-    for (let i = currentIndex; i < currentIndex + itemsToShow; i++) {
+    for (let i = currentIndex; i <= currentIndex + itemsToShow; i++) {
         listItems[i].classList.remove('hidden');
     }
     currentIndex += itemsToShow;
+
+    if (currentIndex >= listItems.length) {
+        loadMoreBtn.classList.add('hidden');
+    }
 });
