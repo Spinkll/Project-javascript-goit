@@ -3,6 +3,14 @@ const theme = window.matchMedia('(prefers-color-scheme: dark)');
  function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
     document.documentElement.className = themeName;
+    
+    const favicon = document.getElementById('favicon');
+     
+    if (themeName === 'theme-dark') {
+        favicon.href = './darkFavIcon.svg';
+    } else {
+        favicon.href = './lightFavIcon.svg';
+    }
 }
 
 export function toggleTheme() {
@@ -21,5 +29,4 @@ export function getTheme() {
         setTheme('theme-light');
         document.getElementById('slider').checked = false;
     }
-    console.log(theme.matches);
 }
