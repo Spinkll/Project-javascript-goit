@@ -7,8 +7,6 @@
   box-sizing: border-box;
 }
 
-
-
 .logo {
   color: var(--titles-color);
   font-family: Impact;
@@ -35,11 +33,9 @@
   gap: 24px;
 }
 
-
 .socials-link:hover {
   color: var(--secondary-color);
 }
-
 
 .socials-item,
 .copyright-paragraph {
@@ -82,8 +78,9 @@
     align-items: baseline;
     justify-content: space-between;
 
-  .socials-list {
-    margin: 0, 0, 40px;
-    margin-left: auto;
+    .socials-list {
+      margin: 0, 0, 40px;
+      margin-left: auto;
+    }
   }
 }
