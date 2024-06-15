@@ -56,9 +56,10 @@
   --muted-color: #204136;
   --text-color: #ffffff;
   --titles-color: #f0f0f0;
-  --input-color: rgba(240, 240, 240, 0.60);
+  --input-color: rgba(240, 240, 240, 0.6);
   --secondary-bgc-accent: #204136;
-  --modal-bgc-accent: #2A2D32;
+  --modal-bgc-accent: #2a2d32;
+  --modal-bgc: rgba(41, 41, 41, 0.8);
 }
 
 .theme-light {
@@ -69,7 +70,8 @@
   --muted-color: #bcdfd1;
   --text-color: #1e2023;
   --titles-color: #292929;
-  --input-color: rgba(41, 41, 41, 0.40);
+  --input-color: rgba(41, 41, 41, 0.4);
   --secondary-bgc-accent: rgba(0, 176, 104, 0.2);
-  --modal-bgc-accent: #F0F0F0;
+  --modal-bgc-accent: #f0f0f0;
+  --modal-bgc: rgba(30, 32, 35, 0.8);
 }

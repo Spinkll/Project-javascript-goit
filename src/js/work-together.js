@@ -5,10 +5,11 @@ const inputEmail = formWorkTogether.elements.email;
 const inputMessage = formWorkTogether.elements.message;
 const modal = document.querySelector('.modal');
 const closeModalButton = modal.querySelector('.button-close');
+const modalBackdrop = modal.querySelector('.modal-backdrop');
 
 const axiosInstance = axios.create({
     baseURL: 'https://portfolio-js.b.goit.study/api-docs',
-})
+});
 
 modal.classList.add('visually-hidden');
 
@@ -37,15 +38,32 @@ formWorkTogether.addEventListener('submit', async (event) => {
 
     try {
         await postMessage(emailForm, messageForm);
-        modal.classList.remove('visually-hidden'); 
+        openModalWindow();
         formWorkTogether.reset();
     } catch (error) {
         alert('Помилка при відправленні повідомлення. Будь ласка, спробуйте ще раз.');
     }
 });
 
-closeModalButton.addEventListener('click', () => {
+function closeModalWindow() {
     modal.classList.add('visually-hidden');
+    modal.classList.remove('show');
+}
+
+function openModalWindow() {
+    modal.classList.remove('visually-hidden');
+    modal.classList.add('show');
+}
+
+closeModalButton.addEventListener('click', closeModalWindow);
+modalBackdrop.addEventListener('click', (e) => {
+    if (e.target === modalBackdrop) {
+        closeModalWindow();
+    }
 });
 
-
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeModalWindow();
+    }
+});
