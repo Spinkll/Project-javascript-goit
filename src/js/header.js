@@ -19,8 +19,6 @@ for (let anchor of anchors) {
     })
 }
 
-console.log(switcSliders)
-
 for(let switcSlider of switcSliders) {
     switcSlider.addEventListener("click", event => {
         toggleTheme();
