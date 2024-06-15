@@ -41,7 +41,7 @@ hederMenu.addEventListener('click', event => {
         return;
     }
 })
-
+/**/
 mobMenu.addEventListener('click', event => {
     const name = event.target.name;
     if(name === "About me" || name === "Projects" || name === "Contacts") {
