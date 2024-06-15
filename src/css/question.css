@@ -4,6 +4,7 @@
 }
 
 .faq__title {
+  color: var(--titles-color);
   font-family: Impact;
   font-size: 52px;
   font-weight: 400;
@@ -15,7 +16,7 @@
 }
 
 .faq__title-accent {
-  color: #00b068;
+  color: var(--secondary-color);
 }
 
 .faq__list {
@@ -25,7 +26,7 @@
 }
 
 .faq__item.is-active {
-  background-color: rgba(0, 176, 104, 0.2);
+  background-color: var(--secondary-bgc-accent);
   border-radius: 16px;
 }
 
@@ -41,7 +42,7 @@
 
   text-align: left;
 
-  color: #292929;
+  color: var(--titles-color);
   font-family: Poppins;
   font-size: 18px;
   font-weight: 400;
@@ -61,7 +62,7 @@
 .faq__icon {
   /* display: inline-block; */
 
-  stroke: currentColor;
+  stroke: var(--titles-color);
   fill: transparent;
 
   transition: transform 0.3s ease;
@@ -85,7 +86,7 @@
 }
 
 .faq__text {
-  color: #292929;
+  color: var(--titles-color);
   font-family: Poppins;
   font-size: 16px;
   font-weight: 300;
