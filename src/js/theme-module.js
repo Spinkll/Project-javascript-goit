@@ -7,12 +7,12 @@ const darkFavicon = document.getElementById('favicon-dark');
      document.documentElement.className = themeName;
      
      if (themeName === 'theme-dark') {
-        lightFavicon.href = '/lightFavIcon.svg';
-        darkFavicon.href = '/darkFavIcon.svg';
+        lightFavicon.href = '/public/lightFavIcon.svg';
+        darkFavicon.href = '/public/darkFavIcon.svg';
      
     } else {
-        lightFavicon.href = '/darkFavIcon.svg';
-        darkFavicon.href = '/lightFavIcon.svg';
+        lightFavicon.href = '/public/darkFavIcon.svg';
+        darkFavicon.href = '/public/lightFavIcon.svg';
     }
 }
 
