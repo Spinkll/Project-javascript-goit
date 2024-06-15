@@ -35,6 +35,7 @@ mobMenuClose.addEventListener("click", event => {
 })
 
 mobMenu.addEventListener('click', event => {
+    const name = event.target.name;
     if(name === "About me" || name === "Projects" || name === "Contacts") {
         mobMenu.classList.remove("is-open");
     }else {
