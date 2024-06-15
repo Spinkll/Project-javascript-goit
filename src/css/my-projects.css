@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+.disable-click {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
 .four-section {
     padding: 10px;
 }
