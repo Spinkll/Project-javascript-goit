@@ -72,6 +72,7 @@ function hideLoader() {
 function showLoader() {
   loader.style.visibility = 'visible';
 }
+
 /* ------------- HTTP request ------------- */
 
 const BASE_URL = 'https://portfolio-js.b.goit.study/api/reviews';
@@ -91,6 +92,7 @@ function createMarkup(reviews1) {
       review =>
         `
       <li class="swiper-slide" id="review-slide">
+
       <p class="reviews-text">${review.review}</p>
       <div class="review-author-data">
           <a class="reviews-img-link" href="${review.avatar_url}">
@@ -108,6 +110,7 @@ function createMarkup(reviews1) {
 const errorContainer = document.querySelector('.error-container');
 
 showLoader();
+
 
 getReviews()
   .then(data => {
