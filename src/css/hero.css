@@ -51,7 +51,7 @@
 
 .hero-dscr-text {
   order: 2;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -110,6 +110,7 @@
 
 .hero-social {
   display: flex;
+  flex-direction: column;
   margin-bottom: 364px;
   background-color: var(--accent-light-color);
   align-items: center;
@@ -117,9 +118,7 @@
 }
 
 .hero-social-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 10px 0; 
 }
 
 @media screen and (max-width: 320px) {
@@ -127,7 +126,6 @@
     display: none !important;
   }
 }
-
   /* --------- Tablet ----------- */
 
   @media screen and (min-width: 768px) {
