@@ -226,7 +226,7 @@
   letter-spacing: 0.5px;
   }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     .hero .hero-content .hero-image {
       display: none !important;
     }
@@ -311,5 +311,9 @@
     .hero-social-item {
       margin: 0 10px;
     }
-
+    @media screen and (min-width: 1280px) {
+      .hero .hero-content .hero-image {
+        display: flex!important;
+      }
+    }
 
