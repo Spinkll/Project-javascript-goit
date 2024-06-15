@@ -4,12 +4,12 @@
     margin: 0 auto;
 
 }
-.hero-content {background-image: url(../images/decor.png);}
+.hero-content {background-image: url(./images/decor.png);}
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .hero-content{
-    background-image: url(../images/decor.png);
+    background-image: url(./images/decor.png);
   }
 }
 
