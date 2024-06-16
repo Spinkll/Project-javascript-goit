@@ -1,8 +1,31 @@
-.hero {
+
+.destop-hero {position: relative;
+  background-image: url(../images/decor\ bg-desk-mob.png);
+  background-size: 320px 704px;
+  padding-top:  112px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .destop-hero {
+    background-image: url(../images/decor\ bg-desk-mob@2x.png);
+  }
+}
+
+.destop-hero .night-thema{
+  background-color: transparent;
+  background-image: url(../images/decor\ bg-desk-mob-dark.png);
+  background-size: 320px 704px;
   padding-top: 112px;
 }
-.hero .container {
-  background-image: url(../images/about-decor-tab.png);
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .destop-hero .night-thema{
+    background-image: url(../images/decor\ bg-desk-mob-dark@2x.png);
+  }
 }
 
 .destop-hero {
@@ -20,6 +43,31 @@
 
   .destop-hero {
     margin-bottom: 92px;
+    position: relative;
+    background-image: url(../images/decor\ bg-desk-mob.png);
+    background-size: 704px 896px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .destop-hero {
+      background-image: url(../images/decor\ bg-desk-mob@2x.png);
+    }
+  }
+
+  .destop-hero .night-thema{
+    background-color: transparent;
+    background-image: url(../images/decor\ bg-desk-mob-dark.png);
+    background-size: 704px 896px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .destop-hero .night-thema{
+      background-image: url(../images/decor\ bg-desk-mob-dark@2x.png);
+    }
   }
 }
 
@@ -171,7 +219,7 @@ img {
   font-family: Poppins;
   font-size: 18px;
   font-weight: 400;
-  line-height: 28px; /* 155.556% */
+  line-height: 28px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin-top: 72px;
@@ -218,7 +266,7 @@ img {
   letter-spacing: 0.5px;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 768px) {
   .hero-image {
     display: none !important;
   }
