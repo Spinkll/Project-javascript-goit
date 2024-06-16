@@ -99,6 +99,11 @@
   line-height: 150%;
   letter-spacing: 0.03em;
 }
+
+.header-nav-menu-item a, .mob-menu-nav-menu-item a {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header-nav-menu-item:focus a,
 .header-nav-menu-item:active a,
 .header-nav-menu-item:hover a,
