@@ -13,8 +13,6 @@ a {
     display: none;
 }
 
-
-
 .projects-item {
     color: #292929;    
     font-family: Impact;
@@ -44,8 +42,9 @@ a {
     max-width: 320px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
+    gap: 40px; 
 }
+
 
 .lang-item {
     color:#292929;
@@ -87,6 +86,7 @@ a {
     background-color: #bbb;
     transform: scale(1.03);
     transition: transform 0.8s;
+
 }
 
 .text-btn {
