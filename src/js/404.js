@@ -13,10 +13,8 @@ for(let switcSlider of switcSliders) {
         toggleTheme();
     })
 }
-console.log(mobMenuOpen)
 mobMenuOpen.addEventListener("click", event => {
     mobMenu.classList.add("is-open");
-    console.log('tic')
 })
 mobMenuClose.addEventListener("click", event => {
     mobMenu.classList.remove("is-open");
