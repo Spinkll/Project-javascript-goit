@@ -53,8 +53,8 @@
 <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 <symbol id="icon-mobmenu-close" viewBox="0 0 32 32">
-<path d="M24 8L8 24" stroke="#F0F0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8 8L24 24" stroke="#F0F0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24 8L8 24" stroke="var(--text-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 8L24 24" stroke="var(--text-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 <symbol id="icon-mobmenu-open" viewBox="0 0 32 32">
 <path d="M5.33398 23.026V21.6927H26.6673V23.026H5.33398ZM5.33398 16.666V15.3327H26.6673V16.666H5.33398ZM5.33398 10.306V8.97266H26.6673V10.306H5.33398Z"/>
