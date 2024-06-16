@@ -21,7 +21,7 @@
     <script type="module" crossorigin src="/Project-javascript-goit/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/Project-javascript-goit/assets/vendor-6128a7b9.js">
     <link rel="stylesheet" href="/Project-javascript-goit/assets/vendor-2a6ab5fa.css">
-    <link rel="stylesheet" href="/Project-javascript-goit/assets/index-856ba046.css">
+    <link rel="stylesheet" href="/Project-javascript-goit/assets/index-05b41774.css">
   </head>
   <body>
     <header class="header">
@@ -95,17 +95,92 @@
 </div>
 
     <main>
-      <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   
-</body>
-</html>
+      <section class="hero" id="hero">
+  <div class="container">
+    <div class="destop-hero">
+      <h1 class="hero-title">
+        Hello, I am
+        <span class="text-decoration-accent">Fullstack developer</span>
+      </h1>
+
+      <div class="hero-image">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/Project-javascript-goit/assets/img1x-e913d1a8.jpg 1x, /Project-javascript-goit/assets/img2x-4fa1275e.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/Project-javascript-goit/assets/img1x-e913d1a8.jpg 1x, /Project-javascript-goit/assets/img2x-4fa1275e.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/Project-javascript-goit/assets/img1x-e913d1a8.jpg 1x, /Project-javascript-goit/assets/img2x-4fa1275e.jpg 2x"
+          />
+          <img src="/Project-javascript-goit/assets/img1x-e913d1a8.jpg" alt="Person" loading="lazy" />
+        </picture>
+      </div>
+    </div>
+
+    <div class="container-button-text">
+      <div class="button-text hero_button_wraper">
+        <button type="button" class="hero-button">
+          <div class="group-icon">
+            <svg class="hero-icon-button" width="28" height="18">
+              <use href="../images/symbol-defs.svg#icon-hero"></use>
+            </svg>
+            <p class="button-text">Order the project</p>
+          </div>
+          <div class="page-button"></div>
+        </button>
+      </div>
+
+      <p class="hero-dscr-text">
+        I work with people all over the world to create
+        <span class="hero-dscr-text-accent">impressive</span> and
+        <span class="hero-dscr-text-accent">functional websites</span> that
+        reflect each client's unique personality.
+      </p>
+    </div>
+  </div>
+  <div>
+    <ul class="hero-social-list">
+      <li class="hero-social-item">
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Insragram</a
+        >
+      </li>
+      <li class="hero-social-item">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Facebook</a
+        >
+      </li>
+      <li class="hero-social-item">
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Linkedin</a
+        >
+      </li>
+      <li class="hero-social-item">
+        <a
+          href="https://spinkll.github.io/Project-javascript-goit/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+      </li>
+    </ul>
+  </div>
+</section>
+
       <section class="about-me" id="about-me">
     <div class="container">
         <h2 class="about-me-title">ABOUT<span class="about-me__color">ME</span></h2>
@@ -165,7 +240,7 @@
             <li class="skill__item">React</li>
         </ul>
     </div>
-      <section class="four-section">
+      <section class="four-section" id="project">
   <div class="container">
     <h2 class="projects-item">
       My<span class="projects-span"> projects</span>
@@ -783,13 +858,13 @@
                         </li>
                         <li class="address-icon">
                             <svg class="lwt-icon" width="24" height="24">
-                                <use href="../images/symbol-defs.svg#icon-lwt-email"></use>
+                                <use href="/Project-javascript-goit/assets/symbol-defs-113a68d0.svg#icon-lwt-email"></use>
                               </svg>
                             <a href="email:lloydjefferson@gmail.com" class="footer-link">lloydjefferson@gmail.com</a>
                         </li>
                         <li class="address-icon">
                             <svg class="lwt-icon" width="24" height="24">
-                                <use href="../images/symbol-defs.svg#icon-lwt-maps"></use>
+                                <use href="/Project-javascript-goit/assets/symbol-defs-113a68d0.svg#icon-lwt-maps"></use>
                               </svg>
                             <a href="https://maps.google.com/maps?ll=40.712776,-74.005974&z=10&t=m&hl=en&gl=US&mapclient=embed&q=New+York+City+New+York+USA" target="_blank">USA, New York</a>
                         </li>
