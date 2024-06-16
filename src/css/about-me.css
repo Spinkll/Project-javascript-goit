@@ -20,13 +20,11 @@
 
 .about-me__img {
     margin-bottom: 40px;
-    max-width: fit-content;
 }
 
 .about-me__block{
     margin-bottom: 40px;
-    width: 320px;
-    color:var(--title-color);
+    color:var(--titles-color);
 }
 .about-me__title {
     font-family: 'Poppins Medium', sans-serif;
@@ -40,9 +38,8 @@
     list-style: square;
 }
 .bio__text{
-    width:320px;
     line-height: 24px;
-    color:var(--title-color);
+    color:var(--titles-color);
 }
 .education__item {
     margin-left: 32px;
@@ -71,13 +68,13 @@
 .skills {
     background-color:var(--muted-color);
     overflow: hidden;
-    font-family: Poppins Medium, sans-serif;
+    font-family: 'Poppins Medium', sans-serif;
     font-weight: 500;
     font-size: 32px;
     letter-spacing: 0.5px;
     line-height: 48px;
     list-style-type: square;
-    color:var(--title-color);
+    color:var(--titles-color);
 }
 .skills__bg{
     background-color: var(--accent-color);
@@ -115,7 +112,7 @@
 }
 
 .skill__item::marker{
-    color:var(--title-color);
+    color:var(--titles-color);
 } 
 
 @keyframes ticker {
@@ -134,10 +131,12 @@
 
 
 @media screen and (min-width: 768px) {
-
     .blocks__position{
         display: flex;
         gap: 32px;
+    }
+    .about-me__img{
+        max-width: fit-content;
     }
     .about-me__block,
     .bio__text{
@@ -202,7 +201,6 @@
         margin-bottom: 80px;
     }
     .about-me__bg{
-        height: 288px;
         position: absolute;
         right: 1;
         bottom: 10;
@@ -211,8 +209,10 @@
         gap: 136px;
         padding-left: 220px;
     }
-    .about-me__block,
     .bio__text{
-        width: 488px;
+        width: 478px;
+    }
+    .about-me__desc{
+        width: 384px;
     }
 }
