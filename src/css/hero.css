@@ -1,16 +1,3 @@
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .container {
   background-image: url(../images/about-decor-tab.png);
 }
@@ -36,34 +23,39 @@
 }
 
 .hero-title {
-  color: #292929;
+  color: var(--titles-color);
   font-family: Impact;
   font-size: 64px;
   font-weight: 400;
   line-height: 1.25;
-  letter-spacing: 1.8px;
+  letter-spacing: 0.028em;
   text-transform: uppercase;
   max-width: 320px;
 }
 
 @media screen and (min-width: 768px) {
   .hero-title {
-    max-width: 704px;
-    font-size: 136px;
-    line-height: 1.15;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .hero-title {
     max-width: 553px;
     font-size: 124px;
-    line-height: 148px;
+    line-height: 1.19;
+    letter-spacing: 0.014em;
   }
 }
 
+
+
 .text-decoration-accent {
-  color: #00B068;
+  color: var(--secondary-color);
+}
+
+img {
+  border-radius: 32px;
+}
+
+.hero-image {
+  max-width: 592px;
+  height: 444px;
+  flex-shrink: 0;
 }
 
 
@@ -90,7 +82,6 @@
 .button-text {
 display: flex;
 flex-direction: row;
-justify-content: center;
 align-items: center;
 }
 
@@ -116,7 +107,7 @@ align-items: center;
 }
 
 .button-text {
-  color: #292929;
+  color: var(--titles-color);
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
@@ -136,7 +127,7 @@ align-items: center;
 .page-button {
   position: absolute;
   bottom: -32px;
-  left: 155px;
+  left: 115px;
   width: 165px;
   height: 92px;
   flex-shrink: 0;
@@ -154,11 +145,11 @@ align-items: center;
 
 
 .hero-dscr-text-accent {
-  color: #00B068;
+  color: var(--secondary-color);
 }
 
 .hero-dscr-text {
-  color:#292929;
+  color: var(--titles-color);
   font-family: Poppins;
   font-size: 18px;
   font-weight: 400;
@@ -189,7 +180,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 24px;
-background: #E4E5E6;
+background: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -201,7 +192,7 @@ background: #E4E5E6;
 }  
 
 .hero-social-item {
-  color: #292929;
+  color: var(--titles-color);
   font-family: Poppins;
   font-size: 16px;
   font-weight: 300;
@@ -214,180 +205,4 @@ background: #E4E5E6;
     display: none !important;
   }
 }
-  /* --------- Tablet ----------- */
-
-  /* @media screen and (min-width: 768px) {
   
-
-  .hero-text {
-  padding: 68px 0 32px 0;
-  background-image: url(../images/about-decor-desktop.png);
-  background-size: 704px 972px;
-  }
-
-  @media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-text{
-  background-image: url(../images/about-decor-desktop.png);
-  }
-  }
-
-  .hero-title {
-  font-size: 136px;
-  line-height: 1.15;
-  }
-
-  .hero-image {
-  margin-bottom: 40px;
-  margin-left: 368px;
-  }
-
-  .hero-social {
-    display: flex;
-    margin-bottom: 364px;
-    background-color: var(--accent-light-color);
-    align-items: center;
-    justify-content: center;
-    }
-
-  .hero-social-item {
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
-  text-transform: none;
-  margin: 20px 0px;
-  }
-
-  .hero-button {
-  width: 416px;
-  height: 96px;
-  margin-left: 104px;
-  }
-
-  .button-accent {
-  width: 48px;
-  height: 96px;
-  }
-
-  .hero-button-link {
-  letter-spacing: 0.5px;
-  font-size: 20px;
-  line-height: 1.6;
-  transition: transform 1.2s ease;
-  }
-
-  .hero-button-link:hover {
-  transform: translateX(56px);
-  }
-  .hero-button:hover .hero-button-spot {
-
-  background-color: var(--secondary-light-color);
-  width: 414px;
-  }
-
-  .hero-dscr {
-  padding: 64px 32px;
-  }
-
-  .hero-dscr-text {
-  text-align: center;
-
-  text-align: center;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 1.33;
-  letter-spacing: 0.5px;
-  }
-  }
-  @media screen and (max-width: 768px) {
-    .hero .hero-content .hero-image {
-      display: none !important;
-    }
-  }
-
-  /*  //--------- Desktop ------------// незрозуміла з текстом */
-  /* @media screen and (min-width: 1280px) {
-    .hero {
-      max-width: 1280px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 0;
-    }
-
-    .hero .container {
-      max-width: 100%;
-      padding: 0;
-      margin: 0;
-    }
-
-    .hero-content {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-      width: 100%;
-      padding: 0;
-    }
-
-    .hero-text {
-      flex: 1;
-      order: 1;
-      text-align: left;
-      padding: 0;
-      background-image: none;
-    }
-
-    .hero-title {
-      text-align: left;
-    }
-
-    .hero-dscr {
-      order: 3;
-      width: 100%;
-    }
-
-    .hero-button {
-      order: 4;
-      width: auto;
-      height: auto;
-      padding: 0;
-      border: none;
-      position: static;
-      margin-top: 20px; }
-    }
-
-    .hero-image {
-      order: 2;
-      flex-basis: calc(50% - 40px);
-      margin: 0 20px;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .hero-social {
-      order: 5;
-      width: 100%;
-      margin-top: 20px;
-      justify-content: center;
-    }
-
-    .hero-social-list {
-      display: flex;
-      justify-content: center;
-      padding: 0;
-    }
-
-    .hero-social-item {
-      margin: 0 10px;
-    }
-    @media screen and (min-width: 1280px) {
-      .hero .hero-content .hero-image {
-        display: flex!important;
-      }
-    }
- */ 
