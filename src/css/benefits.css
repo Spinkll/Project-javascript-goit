@@ -1,5 +1,6 @@
 .benefits-header {
-  font-family: Impact, sans-serif;
+  font-family: 'Impact',
+    sans-serif;
   font-size: 52px;
   font-weight: 400;
   line-height: 64px;
@@ -13,8 +14,6 @@
   color: var(--secondary-color);
   font-weight: bold;
 }
-
-/* .benefits-content-wrap {} */
 
 .benefits-list-wrap {
   display: flex;
@@ -46,8 +45,14 @@
   transform: scale(1.2);
 }
 
+.benefits-icon:hover {
+  transform: scale(1.2);
+
+}
+
 .benefits-paragraf {
-  font: Poppins, sans-serif;
+  font-family: 'Poppins Medium',
+    sans-serif;
   font-size: 18px;
   margin: 0 0 16px 0;
   line-height: 28px;
@@ -57,7 +62,8 @@
 }
 
 .benefits-text {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins Medium',
+    sans-serif;
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
@@ -72,7 +78,6 @@
   .benefits-list-wrap {
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: center; */
     margin: 0 auto;
   }
 
@@ -88,11 +93,22 @@
     width: 336px;
   }
 
+  .benefits-bg {
+    position: relative;
+    padding-top: 372px;
+  }
+
   .benefits-header {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    z-index: 1;
+
     font-size: 108px;
     margin-bottom: 0;
     line-height: 124px;
     max-width: 704px;
+    padding-left: 20px;
   }
 
   .benefits-paragraf {
@@ -107,13 +123,11 @@
   .benefits-list-wrap {
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: center; */
     margin: 0 auto;
     width: 100%;
   }
 
   .benefits-header {
-    width: 681px;
     margin-bottom: 0;
   }
 
@@ -129,13 +143,23 @@
     margin-right: 0;
   }
 
-  .benefits-section-wrap {
-    background-image: image-set(
-      url('../images/decor-benefits-1x-min.png') 1x,
-      url('../images/decor-benefits-2x-min.png') 2x
-    );
+  .benefits-header {
+    top: 11%;
+    left: 0;
+  }
+
+  .benefits-bg::before {
+    content: "";
+    position: absolute;
+    top: -6%;
+    right: 5%;
+    width: 526px;
+    height: 408px;
+
+    background-image: image-set(url('../images/decor-benef-bg.png') 1x,
+        url('../images/decor-benef-bg-2x.png') 2x);
     background-repeat: no-repeat;
-    background-position: 730px 55px;
     background-size: 526px;
   }
+
 }

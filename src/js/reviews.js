@@ -3,7 +3,7 @@
 import axios from 'axios';
 // import '../css/styles.css';
 
-/* ----------- iziToast ----------- */
+/* ----------- iziToast import ----------- */
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
@@ -110,7 +110,6 @@ function createMarkup(reviews1) {
 const errorContainer = document.querySelector('.error-container');
 
 showLoader();
-
 
 getReviews()
   .then(data => {
