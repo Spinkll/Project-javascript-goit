@@ -3,6 +3,14 @@ const theme = window.matchMedia('(prefers-color-scheme: dark)');
  function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
     document.documentElement.className = themeName;
+    
+    const favicon = document.getElementById('favicon');
+     
+    if (themeName === 'theme-dark') {
+        favicon.href = './darkFavIcon.svg';
+    } else {
+        favicon.href = './lightFavIcon.svg';
+    }
 }
 
 export function toggleTheme() {
@@ -16,10 +24,11 @@ export function toggleTheme() {
 export function getTheme() {
     if(theme.matches === true) {
         setTheme('theme-dark');
-        document.getElementById('slider').checked = true;
+        document.getElementById("slider").checked = true;
+        document.getElementById("mob--menu-slider").checked = true;
     }else {
         setTheme('theme-light');
-        document.getElementById('slider').checked = false;
+        document.getElementById("slider").checked = false;
+        document.getElementById("mob--menu-slider").checked = false;
     }
-    console.log(theme.matches);
 }
