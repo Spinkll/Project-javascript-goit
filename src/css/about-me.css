@@ -20,12 +20,10 @@
 
 .about-me__img {
     margin-bottom: 40px;
-    max-width: fit-content;
 }
 
 .about-me__block{
     margin-bottom: 40px;
-    width: 320px;
     color:var(--titles-color);
 }
 .about-me__title {
@@ -40,7 +38,6 @@
     list-style: square;
 }
 .bio__text{
-    width:320px;
     line-height: 24px;
     color:var(--titles-color);
 }
@@ -143,7 +140,6 @@
     .bio__text{
         width: 336px;
         margin-bottom: 0;
-
     }
     .about-me{
         padding-bottom: 124px;
@@ -182,6 +178,7 @@
         padding-bottom: 40px;
     }
     .about-me__img{
+        max-width: fit-content;
         margin-top: 232px;
         margin-bottom: 0;
     }
@@ -211,8 +208,10 @@
         gap: 136px;
         padding-left: 220px;
     }
-    .about-me__block,
     .bio__text{
-        width: 488px;
+        width: 478px;
+    }
+    .about-me__desk{
+        width: 384px;
     }
 }
