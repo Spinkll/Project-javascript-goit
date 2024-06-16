@@ -94,13 +94,13 @@
   line-height: 150%;
   letter-spacing: 0.03em;
 }
-.header-nav-menu-item:target a,
+.header-nav-menu-item:focus a,
 .header-nav-menu-item:active a,
 .header-nav-menu-item:hover a,
 .mobile-menu-button-close:hover,
 .mob-menu-nav-menu-item:hover a,
 .mob-menu-nav-menu-item:active a,
-.mob-menu-nav-menu-item:target a {
+.mob-menu-nav-menu-item:focus a {
   color: var(--secondary-color);
 }
 
@@ -188,6 +188,9 @@ input:checked + .slider:before {
     display: block;
   }
   .mobile-menu-button {
+    display: none;
+  }
+  .mob-menu {
     display: none;
   }
 
