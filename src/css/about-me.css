@@ -85,50 +85,49 @@
     color:var(--secondary-color);
 }
 
- .skills__wrapper {
+.skills__wrapper {
     display: flex;
-    list-style-type: square;
     padding-left: 0;
     width: fit-content;
-    /* transform: translate(100%, 0); */
+    list-style: none;
+    transform: translate(100%, 0); 
     animation: ticker reverse 10s linear infinite;
 }
 .skill__wrapper {
     display: flex;
-    list-style-type: square;
-
+    list-style: none;
     padding-left: 0;
     width: fit-content;
-    /* transform: translate(100%, 0);   */
+    transform: translate(100%, 0);  
     animation: ticker  10s linear infinite;
 }
 .skills__item, .skill__item {
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 10px;
-    padding-right: 54px;
+    padding-right: 16px;
     flex-shrink: 0; 
     white-space: nowrap; 
     position: relative;
 }
-.skills__item::marker{
-    color: var(--secondary-color);
-    width: 8px;
-    height: 8px;
+.skills__item::before {
+    content: '';
+    display: inline-block;
+    width: 8px; 
+    height: 8px; 
+    margin-right: 16px;
+    background-color: var(--secondary-color);
+    border-radius: 20%;
+    vertical-align: middle; 
 }
-
-.skill__item::marker{
-    color:var(--titles-color);
-    width: 8px;
-    height: 8px;
-}  
-
-
-.skills__item, .skill__item {
-    padding: 32px 50px;
-    flex-shrink: 0;
-    white-space: nowrap;
-    position: relative;
+.skill__item::before {
+    content: '';
+    display: inline-block;
+    width: 8px; 
+    height: 8px; 
+    margin-right: 16px; 
+    background-color: var(--titles-color);
+    border-radius: 20%;
+    vertical-align: middle;
 }
 
 
@@ -153,6 +152,9 @@
     .bio__text{
         width: 336px;
         margin-bottom: 0;
+    }
+    .wh{
+        margin-bottom: 24px;
     }
     .about-me{
         padding-bottom: 124px;
