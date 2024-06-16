@@ -115,6 +115,9 @@
   margin-bottom: 72px;
 }
 
+.container-button-text:hover {
+  border-color: var(--secondary-light-color);
+}
 @media screen and (min-width: 768px) {
 .container-button-text {
   margin-bottom: 80px;
@@ -154,7 +157,10 @@ align-items: center;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 25px;
+}
+.hero-button-link:hover {
+  transform: translateX(24px);
 }
 
 .button-text {
