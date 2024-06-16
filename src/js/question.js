@@ -9,6 +9,6 @@ new Accordion(accordionContainer, {
     activeClass: 'is-active',
     openOnInit: [0],
     onOpen: (currElement) => {
-        
+
     }
 });
