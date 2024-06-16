@@ -2,20 +2,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 100px;
 }
 
 .loss-title-text {
     color: var(--secondary-color);
-    font-size: 150px;
+    font-size: 100px;
 }
 
 .loss-description, .go-to-main {
     margin-top: 30px;
 }
 
+.go-to-main {
+    margin-bottom: 30px;
+}
+
+.loss-description-text {
+    font-size: 12px;
+    line-height: 32px;
+    color: var(--titles-color);
+    font-family: Poppins;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
 .go-to-main-button {
-    padding: 12px 12px;
+    padding: 6px 6px;
     display: block;
     margin: 0 auto;
     background: var(--secondary-color);
@@ -39,4 +53,28 @@
 
 .go-to-main-button a {
    color: var(--third-color);
+}
+
+@media screen and (min-width: 768px) {
+    .loss-title {
+        height: 200px;
+    }
+
+    .loss-title-text {
+        font-size: 150px;
+    }
+
+    .loss-description-text {
+        font-size: 20px;
+    }
+
+    .go-to-main-button {
+        padding: 12px 12px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }
