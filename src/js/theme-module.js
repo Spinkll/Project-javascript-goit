@@ -23,7 +23,6 @@ export function toggleTheme() {
 
 export function getTheme() {
     const getThemeLocal = localStorage.getItem("theme");
-    console.log(getThemeLocal);
     if(getThemeLocal === "theme-dark" || theme.matches === true) {
         setTheme('theme-dark');
         document.getElementById("slider").checked = true;
