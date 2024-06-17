@@ -15,6 +15,7 @@ ExpiresByType text/javascript "access plus 5 days"
 ExpiresByType text/css "access plus 5 days"
 ExpiresByType image/gif "access plus 5 days"
 ExpiresByType image/jpeg "access plus 5 days"
+ExpiresByType image/jpg "access plus 5 days"
 ExpiresByType image/png "access plus 5 days"
 </IfModule>
 
