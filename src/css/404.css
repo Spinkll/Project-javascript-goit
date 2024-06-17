@@ -56,6 +56,12 @@
    color: var(--third-color);
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 @media screen and (min-width: 768px) {
     .loss-title {
         height: 200px;
@@ -72,9 +78,11 @@
     .go-to-main-button {
         padding: 12px 12px;
     }
+}
 
+@media screen and (min-height: 770px) {
     footer {
-        position: absolute;
+        position: relative;
         bottom: 0;
         width: 100%;
     }
