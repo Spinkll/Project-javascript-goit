@@ -22,11 +22,14 @@ export function toggleTheme() {
 }
 
 export function getTheme() {
-    if(theme.matches === true) {
+    const getThemeLocal = localStorage.getItem("theme");
+    console.log(getThemeLocal);
+    if(getThemeLocal === "theme-dark" || theme.matches === true) {
         setTheme('theme-dark');
         document.getElementById("slider").checked = true;
         document.getElementById("mob--menu-slider").checked = true;
-    }else {
+    }
+    if(getThemeLocal === "theme-light" || theme.matches === false) {
         setTheme('theme-light');
         document.getElementById("slider").checked = false;
         document.getElementById("mob--menu-slider").checked = false;
