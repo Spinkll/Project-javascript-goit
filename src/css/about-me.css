@@ -67,7 +67,6 @@
 
 .skills {
     background-color:var(--muted-color);
-    overflow: hidden;
     font-family: 'Poppins';
     font-weight: 500;
     text-transform: uppercase;
@@ -85,6 +84,11 @@
     color:var(--secondary-color);
 }
 
+.skills-wrap{
+    position: relative;
+    overflow: hidden;
+    height: 242px;
+}
 .skills__wrapper {
     display: flex;
     padding-left: 0;
@@ -189,6 +193,9 @@
     .skills__item,.skill__item {
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+    .skills-wrap{
+        height: 282px;
     }
     .about-me__img{
         max-width: fit-content;
