@@ -17,20 +17,23 @@
 /* ------------- Swiper and slides ------------- */
 
 #review-slide {
-  /* width: 320px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--accent-color);
   border-radius: 16px;
-  padding: 32px;
-  height: 224px;
+  padding: 0 32px;
+  min-height: 360px;
 }
 
 /* ------------- Swiper buttons ------------- */
 
 .swiper-buttons {
-  margin-top: 48px;
-  position: relative;
+  height: 40px;
+  margin-top: 24px;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
   gap: 16px;
 }
 
@@ -59,8 +62,6 @@
   stroke: var(--titles-color);
   display: flex;
   fill: transparent;
-  /* width: 24px;
-  height: 24px; */
 }
 
 /* ------------- Reviews info ------------- */
@@ -78,8 +79,6 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  position: absolute;
-  bottom: 32px;
 }
 
 .reviews-img {
@@ -154,6 +153,7 @@
 
   #review-slide {
     width: 704px;
+    min-height: 224px;
   }
 
   .error-container {
@@ -170,6 +170,12 @@
 
   #review-slide {
     width: 592px;
-    min-height: 230px;
+    min-height: 247px;
+    /* height: 224px; */
   }
+
+  /* .review-author-data {
+    position: absolute;
+    bottom: 32px;
+  } */
 }

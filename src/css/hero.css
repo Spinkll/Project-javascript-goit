@@ -19,20 +19,15 @@
   background-size: 320px 704px;
   padding-top: 112px;
 }
-
-@media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .destop-hero .night-thema{
-    background-image: url(../images/decor\ bg-desk-mob-dark@2x.png);
-  }
+.hero .container {
+  background-image: url(../images/about-decor-tab.png);
 }
 
 .destop-hero {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 72px;
+  justify-content: space-between;
   margin-bottom: 40px;
 }
 
@@ -104,6 +99,13 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .hero-title {
+    max-width: 552px;
+    font-size: 124px;
+  }
+}
+
 .text-decoration-accent {
   color: #00B068;
 }
@@ -112,23 +114,23 @@
 .container-button-text {
   display: flex;
   flex-direction: column;
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 
 .container-button-text:hover {
   border-color: var(--secondary-light-color);
 }
 @media screen and (min-width: 768px) {
-.container-button-text {
-  margin-bottom: 80px;
-}
+  .container-button-text {
+    margin-bottom: 80px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .container-button-text {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 96px;
+    padding-bottom: 96px;
   }
 }
 
@@ -191,6 +193,7 @@ align-items: center;
   border-radius: 16px;
   background: rgba(0, 176, 104, 0.20);
   z-index: 10;
+  transition: background 0.3s ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -201,6 +204,10 @@ align-items: center;
 }
 
 
+.hero-button:hover .page-button,
+.hero-button:focus .page-button {
+  background: rgba(0, 176, 104, 0.60);
+}
 .hero-dscr-text-accent {
   color: #00B068;
 }
