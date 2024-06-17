@@ -30,7 +30,7 @@
     right: 5%;
     width: 336px;
     height: 260px;
-    background-image: url(./images/decor-des2x.png);
+    background-image: url(/images/decor-des2x.png);
     background-repeat: no-repeat;
     background-size: 336px;
     z-index: 1;
