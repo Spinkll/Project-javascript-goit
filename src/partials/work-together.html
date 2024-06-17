@@ -1,6 +1,6 @@
 <section class="work-together" id="contacts">
     <div class="container">
-            <h2 class="work-together-title"> 
+            <h2 class="work-together-title" data-aos="zoom-in-up" data-aos-duration="3000"> 
                 <span class="black-work-together-title">let’s</span>
             work together
             </h2>
@@ -44,8 +44,13 @@
                     placeholder="Your email*"
                     pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
                     required
-        
                   />
+                  <div class="error-message" id="email-error"></div>
+                  <div class="icon-email">
+                    <svg class="icon-ok" width="16" height="16">
+                        <use href="./images/symbol-defs.svg#icon-ep_success-filled"></use>
+                    </svg>
+                  </div>
                  
                   
                   <label for="user-message" class="user-input visually-hidden">Message</label>

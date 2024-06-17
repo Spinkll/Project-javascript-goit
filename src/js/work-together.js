@@ -6,12 +6,16 @@ const inputMessage = formWorkTogether.elements.message;
 const modal = document.querySelector('.modal');
 const closeModalButton = modal.querySelector('.button-close');
 const modalBackdrop = modal.querySelector('.modal-backdrop');
+const emailError = document.getElementById('email-error');
+const iconEmail = document.querySelector('.icon-email');
 
 const axiosInstance = axios.create({
     baseURL: 'https://portfolio-js.b.goit.study/api-docs',
 });
 
 modal.classList.add('visually-hidden');
+iconEmail.classList.add('visually-hidden');
+
 
 async function postMessage(email, message) {
     try {
@@ -25,15 +29,41 @@ async function postMessage(email, message) {
     }
 }
 
+function validateEmail(email) {
+    const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+    return emailPattern.test(email);
+}
+formWorkTogether.addEventListener('input', (e) => {
+    const emailForm = inputEmail.value.trim();
+    iconEmail.classList.add('visually-hidden');
+    
+    if (validateEmail(emailForm)) {
+        iconEmail.classList.remove('visually-hidden');
+    }
+});
+
+
 formWorkTogether.addEventListener('submit', async (event) => {
     event.preventDefault();
 
     const emailForm = inputEmail.value.trim();
     const messageForm = inputMessage.value.trim();
 
+    emailError.textContent = '';
+    inputEmail.classList.remove('invalid-input');
+    
+
     if (emailForm === '' || messageForm === '') {
         alert('Будь ласка, заповніть всі поля.');
         return;
+    }
+
+    if (!validateEmail(emailForm)) {
+        emailError.textContent = 'Invalid email, try again';
+        inputEmail.classList.add('invalid-input');
+        return;
+    } else {
+        iconEmail.classList.remove('visually-hidden');
     }
 
     try {
@@ -46,11 +76,13 @@ formWorkTogether.addEventListener('submit', async (event) => {
 });
 
 function closeModalWindow() {
+    iconEmail.classList.add('visually-hidden')
     modal.classList.add('visually-hidden');
     modal.classList.remove('show');
 }
 
 function openModalWindow() {
+    iconEmail.classList.add('visually-hidden')
     modal.classList.remove('visually-hidden');
     modal.classList.add('show');
 }
