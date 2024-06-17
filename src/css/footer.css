@@ -4,7 +4,7 @@ footer {
   }
 
 .footer-container {
-  border-top: 1px solid var(--accent-color);
+  border-top: 1px solid var(--footer-border);
 }
 
 .footer {
@@ -59,6 +59,10 @@ footer {
 /* tablet */
 
 @media screen and (min-width: 768px) {
+
+  .footer-container {
+    border-top: 1px solid var(--accent-color);
+  }
 
   .socials-list {
     flex-direction: row;
