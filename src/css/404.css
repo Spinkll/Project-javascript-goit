@@ -80,7 +80,7 @@ footer {
     }
 }
 
-@media screen and (min-height: 770px) {
+@media screen and (max-height: 770px) {
     footer {
         position: relative;
         bottom: 0;
