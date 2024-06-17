@@ -7,49 +7,62 @@
 }
 
 .hero .container::before {
-  content: "";
+  content: '';
   position: absolute;
-    top: -20%;
-    left: 10%;
-    width: 352px;
-    height: 264px;
-    background-image: image-set(url('../images/bg-hero-top-mobile1x.png') 1x,
-        url('../images/bg-hero-top-mobile2x.png') 2x);
+  top: -20%;
+  left: 10%;
+  width: 285px;
+  height: 264px;
+
+  background-image: image-set(
+    url('../images/bg-hero-top-mobile1x.png') 1x,
+    url('../images/bg-hero-top-mobile2x.png') 2x
+  );
   filter: blur(3px);
   background-repeat: no-repeat;
   background-size: 352px;
   z-index: -1;
 }
-
+@media screen and (min-width: 359px) {
+  .hero .container::before {
+    width: 320px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero .container::before {
     top: -10%;
     left: 50%;
     width: 356px;
-    height: 276px;  
-    background-image: image-set(url('../images/bg-hero-top-tablet1x.png') 1x,
-        url('../images/bg-hero-top-tablet2x.png') 2x);
-  background-size: 356px;
+    height: 276px;
+    background-image: image-set(
+      url('../images/bg-hero-top-tablet1x.png') 1x,
+      url('../images/bg-hero-top-tablet2x.png') 2x
+    );
+    background-size: 356px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .hero .container::before {
-    left: 70%; 
-    background-image: image-set(url('../images/bg-hero-top-des1x.png') 1x,
-        url('../images/bg-hero-top-des2x.png') 2x);
+    left: 70%;
+    background-image: image-set(
+      url('../images/bg-hero-top-des1x.png') 1x,
+      url('../images/bg-hero-top-des2x.png') 2x
+    );
   }
 }
 
 .hero .container::after {
-  content: "";
+  content: '';
   position: absolute;
-    bottom: 39%;
-    left: 50%;
-    width: 170px;
-    height: 131px;
-    background-image: image-set(url('../images/bg-hero-bottom-mobile1x.png') 1x,
-        url('../images/bg-hero-bottom-mobile2x.png') 2x);
+  bottom: 39%;
+  left: 45%;
+  width: 170px;
+  height: 131px;
+  background-image: image-set(
+    url('../images/bg-hero-bottom-mobile1x.png') 1x,
+    url('../images/bg-hero-bottom-mobile2x.png') 2x
+  );
   filter: blur(3px);
   background-repeat: no-repeat;
   background-size: 170px;
@@ -58,23 +71,27 @@
 
 @media screen and (min-width: 768px) {
   .hero .container::after {
-      bottom: 20%;
-      left: 25%;
-      width: 356px;
-      height: 264px;
-      background-image: image-set(url('../images/bg-hero-bottom-tablet1x.png') 1x,
-          url('../images/bg-hero-bottom-tablet2x.png') 2x);
+    bottom: 20%;
+    left: 25%;
+    width: 356px;
+    height: 264px;
+    background-image: image-set(
+      url('../images/bg-hero-bottom-tablet1x.png') 1x,
+      url('../images/bg-hero-bottom-tablet2x.png') 2x
+    );
     background-size: 356px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .hero .container::after {
-      bottom: 5%;
-      left: 15%;
-      background-image: image-set(url('../images/bg-hero-bottom-des1x.png') 1x,
-          url('../images/bg-hero-bottom-des2x.png') 2x);
-}
+    bottom: 5%;
+    left: 15%;
+    background-image: image-set(
+      url('../images/bg-hero-bottom-des1x.png') 1x,
+      url('../images/bg-hero-bottom-des2x.png') 2x
+    );
+  }
 }
 
 .destop-hero {
@@ -234,7 +251,7 @@ img {
 
 .hero-button:hover .page-button,
 .hero-button:focus .page-button {
-  background: rgba(0, 176, 104, 0.60);
+  background: rgba(0, 176, 104, 0.6);
 }
 .hero-dscr-text-accent {
   color: var(--secondary-color);
