@@ -1,0 +1,22 @@
+# BEGIN
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+</IfModule>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType application/javascript "access plus 5 days"
+ExpiresByType text/javascript "access plus 5 days"
+ExpiresByType text/css "access plus 5 days"
+ExpiresByType image/gif "access plus 5 days"
+ExpiresByType image/jpeg "access plus 5 days"
+ExpiresByType image/png "access plus 5 days"
+</IfModule>
+
+ErrorDocument 404 ../404.html
+# END
