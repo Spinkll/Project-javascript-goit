@@ -1,7 +1,13 @@
 const loadMoreBtn = document.getElementById('two-button');
+const visitButtons = document.querySelectorAll('.visit-button');
 const listItems = document.querySelectorAll('#list-sites .hidden');
 let currentIndex = 0;
-
+const links = [
+    'https://spinkll.github.io/Project-javascript-goit/', 
+    'https://spinkll.github.io/Project-javascript-goit/good-team',
+    'https://klimkovskyi.github.io/CodeCrafters/'
+];
+let linkIndex = 0;
 
 function checkLoadMoreButton() {
     if (currentIndex >= listItems.length) {
@@ -10,7 +16,6 @@ function checkLoadMoreButton() {
         loadMoreBtn.style.display = 'block'; 
     }
 }
-
 
 checkLoadMoreButton();
 
@@ -22,7 +27,18 @@ loadMoreBtn.addEventListener('click', () => {
     }
 
     currentIndex += itemsToShow;
-
-    
+   
     checkLoadMoreButton();
+    
+});
+
+
+visitButtons.forEach(button => {
+    button.addEventListener('click', function () {
+        const currentLink = links[linkIndex];
+        if (currentLink) {
+            window.open(currentLink, '_blank');
+            linkIndex = (linkIndex + 1) % links.length;
+        }
+    });
 });
