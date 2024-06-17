@@ -56,6 +56,9 @@
 .faq__item.is-active > .faq__subtitle .faq__btn {
   border: none;
 }
+.faq__list .faq__item:hover {
+  transform: scale(1.05);
+}
 
 .faq__icon {
   stroke: var(--titles-color);

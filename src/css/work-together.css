@@ -31,7 +31,7 @@
     width: 336px;
     height: 260px;
     background-image: image-set(
-      url('./images/decor-des@1x.png') 1x,
+      url('./images/decor-pl@1xbg.png') 1x,
       url('./images/decor-des@2x.png') 2x
     );
     background-repeat: no-repeat;
@@ -409,6 +409,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .icon-close {
