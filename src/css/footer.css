@@ -59,9 +59,8 @@ footer {
 /* tablet */
 
 @media screen and (min-width: 768px) {
-
-  .footer-container {
-    border-top: 1px solid var(--accent-color);
+  footer {
+    padding: 40px 32px 24px;
   }
 
   .socials-list {

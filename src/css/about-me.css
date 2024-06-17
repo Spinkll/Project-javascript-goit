@@ -1,5 +1,5 @@
 .about-me {
-    font-family: 'Poppins Medium', sans-serif;
+    font-family: 'Poppins';
     font-size: 16px;
     letter-spacing: 0.2px;
     line-height: 24px;
@@ -14,7 +14,7 @@
 }
 
 .about-me__color{
-    margin-left: 10px;
+    margin-left: 10px; 
     color:var(--secondary-color);
 }
 
@@ -27,7 +27,7 @@
     color:var(--titles-color);
 }
 .about-me__title {
-    font-family: 'Poppins Medium', sans-serif;
+    font-weight: 500;
     font-size: 32px;
     letter-spacing: 0.5px;
     line-height: 40px;
@@ -67,9 +67,9 @@
 
 .skills {
     background-color:var(--muted-color);
-    overflow: hidden;
-    font-family: Poppins Medium, sans-serif;
+    font-family: 'Poppins';
     font-weight: 500;
+    text-transform: uppercase;
     font-size: 32px;
     letter-spacing: 0.5px;
     line-height: 48px;
@@ -84,50 +84,66 @@
     color:var(--secondary-color);
 }
 
+.skills-wrap{
+    position: relative;
+    overflow: hidden;
+    height: 242px;
+}
 .skills__wrapper {
     display: flex;
-    list-style-type: square;
     padding-left: 0;
     width: fit-content;
-    transform: translate(100%, 0);
-    animation: ticker reverse 20s linear infinite;
+    list-style: none;
+    transform: translate(100%, 0); 
+    animation: ticker reverse 10s linear infinite;
 }
 .skill__wrapper {
     display: flex;
-    list-style-type: square;
+    list-style: none;
     padding-left: 0;
     width: fit-content;
-    transform: translate(100%, 0);
-    animation: ticker  20s linear infinite;
+    transform: translate(100%, 0);  
+    animation: ticker  10s linear infinite;
 }
-.skills__item,.skill__item {
+.skills__item, .skill__item {
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-right: 40px;
-    flex-shrink: 0;
-    white-space: nowrap;
-    }
-.skills__item::marker{
-    color: var(--secondary-color);
+    padding-right: 16px;
+    flex-shrink: 0; 
+    white-space: nowrap; 
+    position: relative;
+}
+.skills__item::before {
+    content: '';
+    display: inline-block;
+    width: 8px; 
+    height: 8px; 
+    margin-right: 16px;
+    background-color: var(--secondary-color);
+    border-radius: 20%;
+    vertical-align: middle; 
+}
+.skill__item::before {
+    content: '';
+    display: inline-block;
+    width: 8px; 
+    height: 8px; 
+    margin-right: 16px; 
+    background-color: var(--titles-color);
+    border-radius: 20%;
+    vertical-align: middle;
 }
 
-.skill__item::marker{
-    color:var(--titles-color);
-} 
+
 
 @keyframes ticker {
-    0% {        
-        transform: translate(135%, 0);
-    }    
-    99% {    
-        opacity: 1;
-        transform: translate(-135%, 0);
+    0% {
+        transform: translateX(0%);
     }
     100% {
-        opacity: 0;
-        transform: translate(-135%, 0);
-    }   
-}    
+        transform: translateX(-50%); 
+    }
+}
 
 
 @media screen and (min-width: 768px) {
@@ -141,17 +157,18 @@
         width: 336px;
         margin-bottom: 0;
     }
+    .wh{
+        margin-bottom: 24px;
+    }
     .about-me{
         padding-bottom: 124px;
     }
     .about-me-title{
-        font-family: 'Impact',sans-serif;
         font-size: 108px;
         letter-spacing: 1.8px;
         line-height: 124px;
     }
     .about-me__title{
-        font-family: 'Poppins Medium',sans-serif;
         font-size: 36px;
         letter-spacing: 0.5px;
         line-height: 48px;
@@ -176,6 +193,9 @@
     .skills__item,.skill__item {
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+    .skills-wrap{
+        height: 282px;
     }
     .about-me__img{
         max-width: fit-content;
