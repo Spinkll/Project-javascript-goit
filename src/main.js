@@ -1,6 +1,10 @@
 import './js/question';
 import { getTheme } from './js/theme-module';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 getTheme();
+
+AOS.init();
 
 import './js/about-me';
 import './js/benefits';
