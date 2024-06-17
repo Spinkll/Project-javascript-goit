@@ -92,6 +92,7 @@ a {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.5px;
+  margin-bottom: 40px;
 }
 
 .list-sites {
@@ -188,6 +189,10 @@ a {
   .two-button {
     margin-top: 60px;
   }
+
+  .text-btn {
+    margin-bottom: 0;
+  }
 }
 
 /*----------DESKTOP-----------*/
@@ -221,5 +226,9 @@ a {
     font-size: 20px;
     line-height: 32px;
     margin-top: 80px;
+  }
+
+  .items-info {
+    max-width: 1080px;
   }
 }
