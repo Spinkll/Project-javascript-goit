@@ -258,8 +258,10 @@ background: #E4E5E6;
 }
 
 .hero-social-item:hover {
-  transform: translateX(24px);
+  box-shadow: inset 110px 0 0 0 var(black-light-color);
+  color: var(accent-light-color);
 }
+
 @media screen and (max-width: 768px) {
    .hero-image {
     display: none !important;
