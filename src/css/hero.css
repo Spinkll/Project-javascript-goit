@@ -257,6 +257,9 @@ background: #E4E5E6;
   letter-spacing: 0.5px;
 }
 
+.hero-social-item:hover {
+  transform: translateX(24px);
+}
 @media screen and (max-width: 768px) {
    .hero-image {
     display: none !important;
