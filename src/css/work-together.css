@@ -30,10 +30,13 @@
     right: 5%;
     width: 336px;
     height: 260px;
+    /*
     background-image: image-set(
       url('./images/decor-pl@1xbg.png') 1x,
       url('./images/decor-des@2x.png') 2x
     );
+    */
+    background-image: url(./images/decor-des@2x.png);
     background-repeat: no-repeat;
     background-size: 336px;
   }

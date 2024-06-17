@@ -21,6 +21,7 @@
   background-color: var(--accent-color);
   border-radius: 16px;
   padding: 32px;
+  height: 224px;
 }
 
 /* ------------- Swiper buttons ------------- */
@@ -77,6 +78,8 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  position: absolute;
+  bottom: 32px;
 }
 
 .reviews-img {
