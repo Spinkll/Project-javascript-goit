@@ -40,6 +40,7 @@
   --modal-bgc: rgba(41, 41, 41, 0.8);
   --benefits-icon-bgc: rgba(20, 197, 124, 0.1);
   --footer-border: #1e2023;
+  --body-background-color: #1e2023;
 }
 
 .theme-light {
@@ -56,8 +57,9 @@
   --modal-bgc: rgba(30, 32, 35, 0.8);
   --benefits-icon-bgc: rgba(0, 176, 104, 0.1);
   --footer-border: #e4e5e6;
+  --body-background-color: #f0f0f0;
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: var(--body-background-color);
 }
