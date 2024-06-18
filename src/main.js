@@ -6,8 +6,7 @@ getTheme();
 
 AOS.init();
 
-import './js/about-me';
-import './js/benefits';
+
 import './js/footer';
 import './js/header';
 import './js/hero';

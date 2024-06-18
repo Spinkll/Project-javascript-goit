@@ -76,12 +76,14 @@ a {
   border: none;
   background: var(--accent-color);
   cursor: pointer;
+  color: var(--titles-color)
 }
 
 .visit-button:hover {
   background-color: #bbb;
   transform: scale(1.03);
   transition: transform 0.8s;
+  color: var(--titles-color);
 }
 
 .text-btn {
@@ -207,7 +209,6 @@ a {
 
   .list-sites {
     max-width: 1008px;
-    /* gap: 80px; */
     display: block;
     margin-right: auto;
     margin-left: auto;

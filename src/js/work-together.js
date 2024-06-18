@@ -39,6 +39,9 @@ formWorkTogether.addEventListener('input', (e) => {
     
     if (validateEmail(emailForm)) {
         iconEmail.classList.remove('visually-hidden');
+    } else {
+        emailError.textContent = 'Invalid email, try again';
+        inputEmail.classList.add('invalid-input');
     }
 });
 

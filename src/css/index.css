@@ -11,36 +11,14 @@
 @import url('./reviews.css');
 @import url('./work-together.css');
 @import url('./footer.css');
-/*
-@font-face {
-  font-family: 'Impact';
-  src: url('/src/fonts/impact.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-*/
+
 :root {
   font-family: 'Poppins', 'Impact';
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  /*
-  --black-light-color: #292929;
-  --secondary-light-color: #00b068;
-  --third-light-color: #f0f0f0;
-  --accent-light-color: #e4e5e6;
-  --muted-light-color: #bcdfd1;
-
-  --primary-dark-color: #1e2023;
-  --secondary-dark-color: #14c57c;
-  --third-dark-color: #f0f0f0;
-  --accent-dark-color: #2a2d32;
-  --muted-dark-color: #204136;
-*/
   color: var(--titles-color);
   background-color: var(--primary-color);
-  /*background-color: rgba(255, 255, 255, 0.87);*/
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
