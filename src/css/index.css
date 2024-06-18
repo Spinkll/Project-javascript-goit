@@ -57,3 +57,7 @@
   --benefits-icon-bgc: rgba(0, 176, 104, 0.1);
   --footer-border: #e4e5e6;
 }
+
+body {
+  background-color: #f0f0f0;
+}
