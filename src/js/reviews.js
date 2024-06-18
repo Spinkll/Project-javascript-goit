@@ -1,7 +1,6 @@
 /* ------------- Axios import ------------- */
 
 import axios from 'axios';
-// import '../css/styles.css';
 
 /* ----------- iziToast import ----------- */
 

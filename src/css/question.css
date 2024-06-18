@@ -17,6 +17,7 @@
 .faq__item.is-active {
   background-color: var(--secondary-bgc-accent);
   border-radius: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .faq__btn {
@@ -25,9 +26,7 @@
   border-bottom: 1px solid #ccc;
   padding: 28px 24px;
   margin: 0;
-
   text-align: left;
-
   color: var(--titles-color);
   font-family: Poppins;
   font-size: 18px;
@@ -35,11 +34,10 @@
   line-height: 1.55;
   letter-spacing: 0.028em;
   text-transform: uppercase;
-
   display: flex;
   gap: 16px;
   justify-content: space-between;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .faq__btn:hover,
@@ -49,7 +47,7 @@
 .faq__btn:hover .faq__icon,
 .faq__btn:focus .faq__icon {
   transform: rotateX(180deg);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, stroke 0.3s ease;
   stroke: var(--secondary-color);
 }
 
@@ -58,13 +56,13 @@
 }
 .faq__list .faq__item:hover {
   transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .faq__icon {
   stroke: var(--titles-color);
   fill: transparent;
-
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, stroke 0.3s ease;
   transition: stroke 0.3s ease;
   flex-shrink: 0;
 }
@@ -78,7 +76,7 @@
   visibility: hidden;
   overflow: hidden;
   transition-property: height, visibility;
-  transition-timing-function: ease;
+  transition: height 0.3s ease, visibility 0.3s ease;
 }
 
 .faq__item.is-active .ac-panel {
@@ -101,19 +99,16 @@
 @media screen and (min-width: 768px) {
   .faq__title {
     font-size: 108px;
-    line-height: 1.15; /* 114.815% */
+    line-height: 1.15; 
     letter-spacing: 0.017em;
-
     margin-bottom: 60px;
   }
 
   .faq__btn {
     width: 704px;
-
     font-size: 20px;
     line-height: 1.6;
     letter-spacing: 0.025em;
-
     gap: 24px;
   }
 }
@@ -124,7 +119,6 @@
   .faq .container {
     display: flex;
     justify-content: space-between;
-
     background-image: url(../images/faq_decor-1x.png);
     background-repeat: no-repeat;
     background-position: left 32px top 612px;

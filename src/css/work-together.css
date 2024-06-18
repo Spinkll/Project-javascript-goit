@@ -62,7 +62,7 @@
 @media screen and (min-width: 768px) {
   .work-together-title {
     font-size: 108px;
-    line-height: 1.15; /* 114.815% */
+    line-height: 1.15; 
     letter-spacing: 0.015em;
     margin-bottom: 60px;
   }
@@ -247,7 +247,7 @@
   font-family: Poppins;
   font-size: 12px;
   font-weight: 300;
-  line-height: 16px; /* 133.333% */
+  line-height: 16px;
   letter-spacing: 0.5px;
 }
 
@@ -375,7 +375,7 @@
   font-family: Poppins;
   font-size: 20px;
   font-weight: 400;
-  line-height: 32px; /* 160% */
+  line-height: 32px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   align-self: stretch;
@@ -390,7 +390,7 @@
   font-family: Poppins;
   font-size: 16px;
   font-weight: 300;
-  line-height: 24px; /* 150% */
+  line-height: 24px; 
   letter-spacing: 0.5px;
 }
 
